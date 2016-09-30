@@ -1,0 +1,62 @@
+{
+	"data": [
+		{
+			"id": "001",
+			"name": "苹果 Apple iPhone 7 (A1660) 128G 金色 移动联通电信 全网通 4G手机",
+			"detailimgs": [
+				"http://pic.ule.com/m/pic/user_800109014/product/prd20160916/7b5c3a904c66aaee_p450x450.jpg",
+				"http://pic.ule.com/m/pic/user_100055/product/prd20160917/7c34242feb99ace0_p580x590.jpg",
+				"http://pic.ule.com/m/pic/user_100055/product/prd20160917/af9b9489b9248f96_p568x547.jpg",
+				"http://pic.ule.com/m/pic/user_800109014/product/prd20160915/48a20c40f6b8cfa3_p541x545.jpg",
+				"http://pic.ule.com/m/pic/user_800109014/product/prd20160915/42e799119d4e7643_p543x542.jpg"
+			],
+			"sx": {
+				"ys": ["金色"]
+			},
+			"bz": "(此商品限购10件)",
+			"twxq": "http://pic.ule.com/m/item/desc/shangpingxiangqing.jpg",
+			"shoppl": "",
+			"dpdz": "http://m.ule.com/store/index/26.html"
+		}, {
+			"id": "002",
+			"name": "包邮 得力/DELI 力笔袋半清湾浅 小清新帆布文具袋中小学生简约笔盒66643  颜色随机发【价格 图片 正品 报价】-邮乐网",
+			"detailimgs": [
+				"http://pic.ule.com/m/pic/user_800110861/product/prd20160831/03381eb8b4b299d5_p800x800.jpg",
+				"http://pic.ule.com/m/pic/user_800110861/product/prd20160831/0d98fea4e49b7fb4_p800x800.jpg",
+				"http://pic.ule.com/m/pic/user_800110861/product/prd20160831/63aa540b6a582224_p800x800.jpg"
+			],
+			"sx": {
+			     "jq":"18.00",
+			     "yjg":"20.00",
+			     "ew":[{
+			     "ew1":"【手机专享】下单立减6元"
+			     }
+			     ]
+				"ys": ["颜色随机（1）个"],
+				
+			},
+			"bz": "(库存19993件)",
+			"twxq": "http://pic.ule.com/m/item/user_800110861/desc20160831/48b4eb48e651aeba_800x-1.jpg",
+			"shoppl": "",
+			"dpdz": "http://m.ule.com/store/index/10887.html"
+		}, {
+			"img": "/build/images/img3.jpg",
+			"title": "小丸子3"
+		}, {
+			"img": "/build/images/img4.jpg",
+			"title": "小丸子4"
+		}, {
+			"img": "/build/images/img1.jpg",
+			"title": "小丸子1"
+		}, {
+			"img": "/build/images/img2.jpg",
+			"title": "小丸子2"
+		}, {
+			"img": "/build/images/img3.jpg",
+			"title": "小丸子3"
+		}, {
+			"img": "/build/images/img4.jpg",
+			"title": "小丸子4"
+		}
+	]
+}

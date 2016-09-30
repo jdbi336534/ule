@@ -1,0 +1,94 @@
+<div class="containerk">
+	<header class="headerk">
+		<ul>
+			<li class="iconfont">&#xe679;</li>
+			<li>商品详情</li>
+			<li class="iconfont">&#xe6b7;</li>
+		</ul>
+	</header>
+	<section class="bodyk">
+		<div id="bannerimgk">
+			<div class="swiper-container" id="detailk-swiper">
+				<div class="swiper-wrapper">
+
+					
+					<div class="swiper-slide">
+						<section id="detailk-scroll1">
+								<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/fa803c820cb389de_p800x800.jpg"/>
+						</section>
+					</div>
+					
+					<div class="swiper-slide">
+						<section id="detailk-scroll2">
+							<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/79874264f5849cf5_p800x800.jpg"/>
+
+						</section>
+					</div>
+					<div class="swiper-slide">
+						<section id="detailk-scroll3">
+							<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/79874264f5849cf5_p800x800.jpg"/>
+
+						</section>
+					</div>
+				  
+				  
+				
+				
+				</div>
+				<div class="swiper-pagination">
+				  	
+				  </div>
+			
+			</div>
+			
+		</div>
+		
+		<p>
+			<span></span>
+			<i></i>
+			<b></b>
+		</p>
+		<section class="tjgwc">
+			<p class="sx"></p>
+			<p class="numberk">
+				<ul class="numberulk">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<i>(库存495件)</i>
+			</p>
+		</section>
+		
+		<section class="shopxx">
+			<ul>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</section>
+		<section class="zffs">
+			<p>支付方式：邮乐卡支付、邮储快捷支付</p>
+		</section>
+		
+		<section class="rmshop">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</section>
+		
+	</section>
+	<footer class="footerk">
+		<form>
+			<a href="#" class="collectbtn"></a>
+			<a href="#" class="shopbtn"></a>
+			<ul>
+				
+				<li>立即购买</li>
+				<li>加入购物车</li>
+			</ul>
+		</form>
+	</footer>
+</div>

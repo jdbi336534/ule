@@ -1,0 +1,23 @@
+<footer id="footer">
+    <ul>
+        <li class="active" data-url="/build/index.html">
+            <i class="iconfont">&#xe6bb;</i>
+            <b>首页</b>
+        </li>
+        <li data-url="/build/search.html">
+            <i class="iconfont">&#xe65c;</i>
+            <b>发现</b>
+        </li>
+        <li>
+            <i class="iconfont">&#xe664;</i>
+        </li>
+        <li>
+            <i class="iconfont">&#xe735;</i>
+            <b>我的</b>
+        </li>
+        <li>
+            <i class="iconfont">&#xe603;</i>
+            <b>退出</b>
+        </li>
+    </ul>
+</footer>
