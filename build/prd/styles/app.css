@@ -655,7 +655,7 @@ a {
 @font-face {
   font-family: 'iconfont';
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/iconfont/iconfont.woff") format("woff"), url("/build/images/iconfont/iconfont.ttf") format("truetype"); }
+  src: url("/build/images/iconfont/iconfont1.woff") format("woff"), url("/build/images/iconfont/iconfont1.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'iconfont';
@@ -664,6 +664,9 @@ a {
 
 .iconfont {
   font-family: iconfont; }
+
+.hide {
+  display: none; }
 
 .container footer {
   height: 44px;

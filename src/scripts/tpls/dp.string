@@ -1,0 +1,95 @@
+<div class="ulfgc hide">
+<ul class="navul1">
+				<li class="iconfont">&#xe630;
+					<a href="/build/index.html">首页</a>
+				</li>
+				<li class="iconfont">&#xe699;
+					<a href="">分类</a>
+				</li>
+				<li class="iconfont">&#xe608;
+					<a href="">购物车</a>
+				</li>
+				<li class="iconfont">&#xe6b8;
+					<a href="">我的邮乐</a>
+				</li>
+	</ul>
+</div>
+<section id="dp-iscrallbox">
+
+<section id="dp-iscrall">
+<section class="body">
+
+<header class="headerk">
+		<ul id="tapul">
+			<li class="iconfont">&#xe679;</li>
+			<li>商店名称</li>
+			<li class="iconfont">&#xe6b7;</li>
+		</ul>	
+</header>
+	<section class="bodybox">
+		<div class="search-shop">
+		   <div class="searchbox">
+		   <input type="text" placeholder="请输入关键字查找商品" id="key" />
+			<span id="searchbtn"></span>
+		   </div>
+			
+		</div>
+		<div class="dppj">
+			<p>
+				店铺星级<span></span>
+			</p>
+			<ul>
+				<li>描述相符:<i>5</i></li>
+				<li>服务态度:<i>5</i></li>
+				<li>发货速度:<i>5</i></li>
+			</ul>
+			<span>
+			    <a href="javascript:void(0)" class="collect_btn"></a>
+			    <a href="javascript:void(0)" class="collect_btn  collected  hide"></a>
+			</span>
+			
+		</div>
+		<div class="shops">
+		<script id="bestshop" type="text/html">
+			<ul class="bestgoods">
+			
+			   {{each listInfos as value i}}
+				<li class="nofrom1to3">
+				
+					<a href="#">
+					    <i class="first0"></i>
+						<img src={{value.imgUrl}} />
+						<p>{{value.listName}}</p>
+					</a>
+				</li>
+				{{/each}}
+				
+			</ul>
+		</script>
+		
+		
+		<script id="norshops" type="text/html">
+			<ul class="norshops">
+			    {{each listInfos as value i}}
+				<li>
+					<a href="#">
+						<img src={{value.imgUrl}} />
+						<span>
+						<b>￥{{value.salePrice}}</b>
+						<b>￥{{value.marketPrice}}</b>
+						</span>
+						
+						<p>{{value.listName}}</p>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+		</script>
+		</div>
+	</section>
+
+
+</section>
+</section>
+
+</section>

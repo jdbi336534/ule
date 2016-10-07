@@ -128,6 +128,7 @@
 	  append: function ($el, str) {
 	    $el.append(str);
 	  },
+	  
 
 	  switchPage: function (index) {
 	    $('#footer li').eq(index).addClass('active').siblings().removeClass('active');

@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(9);
+	module.exports = __webpack_require__(15);
 
 
 /***/ },
@@ -73,6 +73,7 @@
 	  append: function ($el, str) {
 	    $el.append(str);
 	  },
+	  
 
 	  switchPage: function (index) {
 	    $('#footer li').eq(index).addClass('active').siblings().removeClass('active');
@@ -90,24 +91,30 @@
 /* 6 */,
 /* 7 */,
 /* 8 */,
-/* 9 */
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(10);
+	__webpack_require__(16);
 
 
 
 /***/ },
-/* 10 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(11);
+	var str = __webpack_require__(17);
 
 	var common = __webpack_require__(5);
 	var footer = __webpack_require__(4);
@@ -119,7 +126,7 @@
 
 
 /***/ },
-/* 11 */
+/* 17 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">  <section>    searching...  </section></div>"

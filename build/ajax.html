@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ajax11</title>
+  <!--<script src="jquery-1.8.1.min.js"></script>-->
+</head>
+<body>
+<img src="" alt="aaa"  id="img1"/>
+<script type="text/javascript">
+  var oimg = document.getElementById("img1");
+  function fn3(result) {
+    console.log(result)
+   console.log(result.indexInfo[0].imgUrl);
+    oimg.src=result.indexInfo[0].imgUrl;
+  }
+    var scr = document.createElement('script');
+    scr.src = "http://service.ule.com/api/item/searchItems.do?jsonApiCallback=fn3&storeId=10217&sort=9&start=1&end=3&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=1475559282206";
+    /*scr.src = "http://service.ule.com/api/mobile/indexFeaturedGet.do?jsonApiCallback=fn3&sectionKeys=ule_wap_index&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=1475227840042";*/
+    document.body.appendChild(scr);
+
+</script>
+</body>
+</html>

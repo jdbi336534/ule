@@ -656,7 +656,7 @@ a {
 @font-face {
   font-family: 'iconfont';
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/iconfont/iconfont.woff") format("woff"), url("/build/images/iconfont/iconfont.ttf") format("truetype"); }
+  src: url("/build/images/iconfont/iconfont1.woff") format("woff"), url("/build/images/iconfont/iconfont1.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'iconfont';
@@ -666,7 +666,42 @@ a {
 .iconfont {
   font-family: iconfont; }
 
+.hide {
+  display: none; }
+
+.hide {
+  display: none; }
+
+.ulfgc {
+  position: fixed;
+  right: 0;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 5px;
+  z-index: 9999; }
+  .ulfgc .navul1 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 110px;
+    background: #fff;
+    border-radius: 0 0 0 5px;
+    z-index: 102; }
+    .ulfgc .navul1 li {
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+      width: 110px;
+      padding-left: 10px; }
+      .ulfgc .navul1 li a {
+        font-size: 16px;
+        color: #000000;
+        font-weight: bold; }
+
 .containerk {
+  background-color: #fff;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -680,7 +715,7 @@ a {
   .containerk > * {
     width: 100%; }
   .containerk header {
-    height: 44px; }
+    height: 40px; }
     .containerk header ul {
       width: 100%;
       height: 100%;
@@ -716,26 +751,29 @@ a {
     width: .1px;
     overflow: hidden;
     width: 100%; }
-    .containerk .bodyk #bannerimgk {
+    .containerk .bodyk > * {
+      width: 100%;
+      overflow: hidden; }
+    .containerk .bodyk .detailiscroll #bannerimgk {
       max-height: 320px;
       height: 320px;
       width: 100%;
       background-color: aquamarine; }
-      .containerk .bodyk #bannerimgk .swiper-container {
+      .containerk .bodyk .detailiscroll #bannerimgk .swiper-container {
         height: 100%; }
-        .containerk .bodyk #bannerimgk .swiper-container section {
+        .containerk .bodyk .detailiscroll #bannerimgk .swiper-container section {
           height: 100%; }
-          .containerk .bodyk #bannerimgk .swiper-container section img {
+          .containerk .bodyk .detailiscroll #bannerimgk .swiper-container section img {
             width: 100%;
             height: 100%; }
-        .containerk .bodyk #bannerimgk .swiper-container .swiper-pagination-bullets {
+        .containerk .bodyk .detailiscroll #bannerimgk .swiper-container .swiper-pagination-bullets {
           display: -webkit-box;
           display: -webkit-flex;
           display: flex;
           width: 100%;
           background-color: #fff;
-          bottom: 0px; }
-        .containerk .bodyk #bannerimgk .swiper-container .swiper-pagination-bullet {
+          bottom: 0; }
+        .containerk .bodyk .detailiscroll #bannerimgk .swiper-container .swiper-pagination-bullet {
           left: 0;
           height: 5px;
           background-color: #fff;
@@ -745,7 +783,7 @@ a {
           width: .1px;
           border-radius: 0;
           margin: 0; }
-        .containerk .bodyk #bannerimgk .swiper-container .swiper-pagination-bullet-active {
+        .containerk .bodyk .detailiscroll #bannerimgk .swiper-container .swiper-pagination-bullet-active {
           height: 5px;
           background-color: red;
           -webkit-box-flex: 1;
@@ -754,33 +792,221 @@ a {
           width: .1px;
           border-radius: 0;
           margin: 0; }
-  .containerk footer {
+    .containerk .bodyk .detailiscroll .serverp1 {
+      width: 100%;
+      border-bottom: 1px solid #878787;
+      margin-bottom: 10px; }
+      .containerk .bodyk .detailiscroll .serverp1 > * {
+        display: block; }
+      .containerk .bodyk .detailiscroll .serverp1 span .namei {
+        color: #686868;
+        font-size: 20px; }
+      .containerk .bodyk .detailiscroll .serverp1 i {
+        display: inline;
+        font-size: 20px;
+        font-weight: bold;
+        color: #F52626;
+        margin-right: 10px; }
+      .containerk .bodyk .detailiscroll .serverp1 .oldjg {
+        color: #686868;
+        text-decoration: line-through; }
+      .containerk .bodyk .detailiscroll .serverp1 b {
+        height: 50px;
+        line-height: 50px;
+        color: #F52626; }
+    .containerk .bodyk .detailiscroll .tjgwc {
+      width: 100%; }
+      .containerk .bodyk .detailiscroll .tjgwc .sx {
+        width: 100%;
+        height: 100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column; }
+        .containerk .bodyk .detailiscroll .tjgwc .sx span {
+          position: relative;
+          display: block;
+          width: 80%;
+          height: 50%;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          flex: 1;
+          width: .1px;
+          padding: 0 0 0 20%; }
+          .containerk .bodyk .detailiscroll .tjgwc .sx span i {
+            position: relative;
+            display: block;
+            width: 200px;
+            height: 80%;
+            text-align: center;
+            line-height: 40px;
+            color: #F52626;
+            border: 1px solid #F52626; }
+          .containerk .bodyk .detailiscroll .tjgwc .sx span i::after {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            /* border-right: 20px solid #f30000; */
+            /* border-top: 20px solid #f30000; */
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid #f30000; }
+        .containerk .bodyk .detailiscroll .tjgwc .sx .colorname::before,
+        .containerk .bodyk .detailiscroll .tjgwc .sx .specificationName::before {
+          position: absolute;
+          top: 6px;
+          left: 2px;
+          height: 40px;
+          width: 45px;
+          background: url("http://i0.ule.com/ulewap/i/bg_color.png") center center no-repeat;
+          background-size: 30px auto;
+          content: ""; }
+        .containerk .bodyk .detailiscroll .tjgwc .sx .specificationName::before {
+          background: url("http://i0.ule.com/ulewap/i/bg_size.png") center center no-repeat; }
+      .containerk .bodyk .detailiscroll .tjgwc .numberk {
+        width: 100%;
+        height: 90px;
+        text-align: center; }
+        .containerk .bodyk .detailiscroll .tjgwc .numberk ul {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          width: 60%;
+          margin-left: 20%;
+          height: 45px; }
+          .containerk .bodyk .detailiscroll .tjgwc .numberk ul li {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            width: .1px;
+            line-height: 45px;
+            border: 1px solid #F52626; }
+          .containerk .bodyk .detailiscroll .tjgwc .numberk ul .valuek {
+            -webkit-box-flex: 2;
+            -webkit-flex: 2;
+            flex: 2;
+            width: .1px;
+            border-right: 0;
+            border-left: 0; }
+    .containerk .bodyk .detailiscroll .shopxx {
+      width: 100%; }
+      .containerk .bodyk .detailiscroll .shopxx ul {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column; }
+        .containerk .bodyk .detailiscroll .shopxx ul li {
+          width: 100%;
+          height: 50px;
+          font-size: 20px;
+          line-height: 50px;
+          border: 1px solid #d3d3d3;
+          border-right: 0; }
+          .containerk .bodyk .detailiscroll .shopxx ul li:nth-child(2) {
+            border: 0; }
+          .containerk .bodyk .detailiscroll .shopxx ul li a {
+            width: 100%;
+            height: 100%;
+            color: #686868; }
+    .containerk .bodyk .detailiscroll .zffs {
+      line-height: 50px;
+      background-color: #f1f1f1;
+      border: 1px solid #d3d3d3;
+      border-left: none;
+      border-right: none;
+      padding-left: 10px;
+      color: #838383; }
+    .containerk .bodyk .detailiscroll .rmshop h6 {
+      color: #555555;
+      line-height: 50px;
+      font-size: 20px; }
+    .containerk .bodyk .detailiscroll .rmshop ul {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex; }
+      .containerk .bodyk .detailiscroll .rmshop ul li {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: .1px;
+        float: left;
+        border: 1px solid #c9c9c9;
+        width: 32%;
+        margin-right: 2%; }
+        .containerk .bodyk .detailiscroll .rmshop ul li img {
+          width: 100%;
+          height: 94px; }
+        .containerk .bodyk .detailiscroll .rmshop ul li span {
+          display: block;
+          font-size: 18px; }
+        .containerk .bodyk .detailiscroll .rmshop ul li .newprice {
+          color: #F52626;
+          font-weight: bold; }
+        .containerk .bodyk .detailiscroll .rmshop ul li .oldprice {
+          color: #a8a8a8;
+          text-decoration: line-through; }
+  .containerk .footerk {
     width: 100%;
     height: 70px;
     background-color: #f1f1f1;
     position: fixed;
     left: 0;
-    bottom: 0; }
-    .containerk footer .collectbtn {
+    bottom: 0;
+    z-index: 9999; }
+    .containerk .footerk a {
       height: 45px;
       width: 45px;
       position: absolute;
       top: 12px;
+      left: 2%; }
+    .containerk .footerk .collectbtn {
       left: 2%;
       background: url("http://i0.ule.com/ulewap/i/collect02.png") 0 0 no-repeat;
       background-size: 100% 100%; }
-    .containerk footer .shopbtn {
-      height: 45px;
-      width: 45px;
-      background: url("http://i0.ule.com/ulewap/i/shopping_cart.png") 0 0 no-repeat;
-      position: absolute;
-      top: 12px;
-      left: 15%;
+    .containerk .footerk .collectedd {
+      left: 2%;
+      background: url("http://i0.ule.com/ulewap/i/collected02.png") 0 0 no-repeat;
       background-size: 100% 100%; }
-    .containerk footer ul {
+    .containerk .footerk .shopbtn {
+      background: url("http://i0.ule.com/ulewap/i/shopping_cart.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 15%; }
+      .containerk .footerk .shopbtn i {
+        background: #F52626;
+        border-radius: 10px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: -8px;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .containerk .footerk ul {
       height: 40px;
       margin-top: 15px; }
-      .containerk footer ul li {
+      .containerk .footerk ul li {
         color: #fff;
         float: right;
         height: 100%;
@@ -790,7 +1016,7 @@ a {
         width: 31%;
         margin-right: 15px;
         font-size: 20px; }
-      .containerk footer ul li:nth-child(1) {
+      .containerk .footerk ul li:nth-child(1) {
         background-color: #fe1818; }
-      .containerk footer ul li:nth-child(2) {
+      .containerk .footerk ul li:nth-child(2) {
         background-color: #fe8918; }

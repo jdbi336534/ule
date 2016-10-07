@@ -1,0 +1,229 @@
+.container {
+    height: 100%;
+    @include flexbox();
+    background: #ccc;
+    @include flex-direction(column);
+  
+    > * {
+        width: 100%;
+         
+    }
+    header {
+        height: 41px;
+        color: #fff;
+        
+        ul {
+            width: 100%;
+            height: 100%;
+            @include flexbox();
+            background-color: $baseColor;
+            li {
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                height: 100%;
+                &:nth-child(2) {
+                    @include flex(1);
+                    font-size: 20px;
+                }
+                &:not(:nth-child(2)) {
+                    width: 44px;
+                    font-size: 26px;
+                    color: #fff;
+                    opacity: 0.5;
+                }
+                span {
+                    width: 60px;
+                    height: 25px;
+                    background: gray;
+                    font-size: 14px;
+                    line-height: 25px;
+                    text-align: center;
+                    &:first-child {
+                        border-radius: 10px 0 0 10px;
+                    }
+                    &:last-child {
+                        border-radius: 0 10px 10px 0;
+                    }
+                    &.active {
+                        background-color: #64d985;
+                        color: #fff;
+                    }
+                    &:not(.active) {
+                        background-color: rgba(100, 217, 133, 0.5);
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+        }
+     background: #fff;
+    }
+    .test{
+        height: 51px;
+        width: 100%;
+        background: #fff;
+        ul{
+           width: 1200px;
+            height: 100%;
+              @include flexbox();
+              flex-wrap: nowrap;
+            li{
+                @include flex(1);
+                float: left;
+                width: 65px;
+                 line-height: 51px;
+                 margin: 0 5px;
+            }
+            .active {
+                color: $baseColor;
+            }
+        }
+    }
+
+    .bodylq {
+        
+        @include flex(1);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        .boxx {
+            width: 100%;
+            .dpq {
+                width: 100%;
+                margin-top: 10px;
+                background: #fff;
+                h6 {
+                    height: 54px;
+                    width: 100%;
+                   border-bottom: 1px solid #808080;
+                    * {
+                        height: 100%;
+                        line-height: 54px;
+                    }
+                    a {
+                        display: block;
+                        width: 85%;
+                        padding-left: 15%;
+                        background: url("http://static.ule.com/mstore/user_800113341/store_9999/images/20160720/2a8adeb253960800.png") no-repeat 5px;
+                        background-size: 45px 24px;
+                        span {
+                            float: right;
+                            width: 15%;
+                            .moreIcon {
+                                content: '';
+                                width: 13px;
+                                height: 13px;
+                                background: transparent;
+                                border-left: 1px solid #808080;
+                                border-bottom: 1px solid #808080;
+                                -webkit-transform: rotate(-135deg);
+                                -moz-transform: rotate(-135deg);
+                                -ms-transform: rotate(-135deg);
+                                -o-transform: rotate(-135deg);
+                                transform: rotate(-135deg);
+                                position: absolute;
+                                display: inline-block;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    width: 96%;
+                     padding: 10px 2%;
+                    li {
+                       
+                        width: 100%;
+                        padding-right: 90px;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        height: 100px;
+                        position: relative;
+                      
+                        .left {
+                            background: #55a8e9;
+                            .p1 {
+                                height: 75px;
+                                width: 75px;
+                                position: absolute;
+                                left: 10px;
+                                width: 76px;
+                                top: 12px;
+                                background: url("http://i0.beta.ule.com/ulewap/i/couponIcons.png") no-repeat;
+                                    background-position: 0 -345px;
+                                background-size: 75px 495px;
+                              
+                            }
+                            .p2 {
+                                padding: 10px;
+                                border-radius: 5px 0 0 5px;
+                                color: #fff;
+                                height: 100px;
+                                box-sizing: border-box;
+                                line-height: 1.1;
+                                padding-left: 92px;
+                                span {
+                                    display: block;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                .span1 {
+                                    height: 25px;
+                                    overflow: hidden;
+                                    margin-bottom: 5px;
+                                    border-bottom: 2px solid #F0B840;
+                                }
+                                .span2 {
+                                    i {
+                                        font-size: 25px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                .span3 {
+                                    display: block;
+                                    height: 30px;
+                                    line-height: 15px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                        .right {
+                            padding: 10px;
+                            border-radius: 0 5px 5px 0;
+                            box-sizing: border-box;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 90px;
+                            background: #fff;
+                            border: 1px solid #f2f2f2;
+                            height: 100%;
+                            .wp {
+                                text-align: center;
+                                background: #deeefa;
+                                #np {
+                                    width: 60px;
+                                    height: 4px;
+                                    color: #fff;
+                                    margin-top: 10px;
+                                    background: #deeefa;
+                                }
+                            }
+                            .px {
+                                width: 100%;
+                                background: #55a8e9;
+                                height: 30px;
+                                line-height: 30px;
+                                border-radius: 40px;
+                                display: block;
+                                text-align: center;
+                                color: #fff;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

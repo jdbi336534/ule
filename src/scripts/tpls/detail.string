@@ -1,93 +1,186 @@
-<div class="containerk">
+<div class="ulfgc hide">
+<ul class="navul1">
+				<li class="iconfont">&#xe630;
+					<a href="/build/index.html">首页</a>
+				</li>
+				<li class="iconfont">&#xe699;
+					<a href="">分类</a>
+				</li>
+				<li class="iconfont">&#xe608;
+					<a href="">购物车</a>
+				</li>
+				<li class="iconfont">&#xe6b8;
+					<a href="">我的邮乐</a>
+				</li>
+	</ul>
+</div>
+
+<div class="containerk" id="boxx">
+
 	<header class="headerk">
-		<ul>
+		<ul id="tapul">
 			<li class="iconfont">&#xe679;</li>
 			<li>商品详情</li>
 			<li class="iconfont">&#xe6b7;</li>
 		</ul>
+		
 	</header>
-	<section class="bodyk">
+	
+	<section class="bodyk clear"  id="detail-Iscrall">
+		<div class="detailiscroll">	
 		<div id="bannerimgk">
+		
 			<div class="swiper-container" id="detailk-swiper">
+			
 				<div class="swiper-wrapper">
-
+				<script id="listimg" type="text/html">
+				{{each image as value i}}
+						<div class="swiper-slide">
+							<section id="detailk-scroll1">
+								<img src={{value.imgUrl}} />
+							</section>
+						</div>
+					{{/each}}
 					
-					<div class="swiper-slide">
-						<section id="detailk-scroll1">
-								<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/fa803c820cb389de_p800x800.jpg"/>
-						</section>
-					</div>
-					
-					<div class="swiper-slide">
-						<section id="detailk-scroll2">
-							<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/79874264f5849cf5_p800x800.jpg"/>
-
-						</section>
-					</div>
-					<div class="swiper-slide">
-						<section id="detailk-scroll3">
-							<img src="http://pic.ule.com/m/pic/user_800111532/product/prd20160914/79874264f5849cf5_p800x800.jpg"/>
-
-						</section>
-					</div>
-				  
-				  
-				
-				
+             </script>
 				</div>
+				
 				<div class="swiper-pagination">
-				  	
-				  </div>
-			
+
+				</div>
+
 			</div>
-			
+        
 		</div>
-		
-		<p>
-			<span></span>
-			<i></i>
-			<b></b>
-		</p>
-		<section class="tjgwc">
-			<p class="sx"></p>
-			<p class="numberk">
-				<ul class="numberulk">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<i>(库存495件)</i>
+
+			<p class="serverp1">
+			
+				<span> 
+				 <i class="namei">
+				 	
+				  <script id="smdata" type="text/html">
+				 {{listName}}
+				 </script>
+				
+				 </i>
+				
+				  
+			</span>
+			
+				<i class="i1">
+				<script id="newpricedata" type="text/html">
+				¥{{salePrice}}
+				 </script>
+			</i>
+			
+			
+			
+				<i class="oldjg">
+				<script id="oldpricedata" type="text/html">
+				¥{{marketPrice}}
+				 </script>
+				
+			</i>
+				<b class="activedata">
+				<img src="build/images/mj.png"/>
+				<script id="activedata" type="text/html">
+				{{eventtitle}}
+				 </script>
+			</b>
+			
+			 
+						
 			</p>
-		</section>
-		
-		<section class="shopxx">
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</section>
-		<section class="zffs">
-			<p>支付方式：邮乐卡支付、邮储快捷支付</p>
-		</section>
-		
-		<section class="rmshop">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</section>
-		
+			<section class="tjgwc">
+				
+			
+				<p class="sx">
+                  <script id="sxdata" type="text/html">
+					<span class="colorname">
+					<i>{{colors[0].colorName}}</i>
+					</span>
+					<span class="specificationName">
+					<i>{{specifications[0].specificationName}}</i>
+					</span>
+                   </script>
+				</p>
+				
+				 
+				<section class="numberk">
+			
+					<ul class="numberulk clear">
+						<li class="jj">—</li>
+						<li class="valuek">1</li>
+							
+						<li id="add">+</li>
+					</ul>
+					<script id="numdata" type="text/html">
+					<i>(库存{{itemInfo[0].storage}}件)</i>
+					</script>
+					
+					
+				</section>
+				
+				 </script>
+			</section>
+
+			<section class="shopxx clear">
+                
+				<ul class="ljbox">
+					<script id="ljdata" type="text/html">
+					
+					<li>
+						<a href="#">商品评价</a>
+					</li>
+					<li>
+						<a href="#">图文详情</a>
+					</li>
+					<li>
+						
+						<a href="/build/dp.html?storeId={{storeId}}">进入店铺</a>
+						
+					</li>
+					</script>
+				</ul>
+				
+			</section>
+			<section class="zffs">
+				<p>支付方式：邮乐卡支付、邮储快捷支付</p>
+			</section>
+
+			<section class="rmshop">
+				<h6>热卖商品推荐</h6>
+				<script id="rmshopdata" type="text/html">
+				<ul>
+				   {{each listInfos as value i}}
+					<li>
+						<a href="#">
+							<img src={{value.imgUrl}} />
+							<span class="newprice">￥{{value.salePrice}}</span>
+							<span class="oldprice">￥{{value.marcketPrice}}</span>
+						</a>
+
+					</li>
+					 {{/each}}
+					
+				</ul>
+				</script>
+			</section>
+
+		</div>
+
 	</section>
 	<footer class="footerk">
 		<form>
 			<a href="#" class="collectbtn"></a>
-			<a href="#" class="shopbtn"></a>
+			<a href="#" class="shopbtn">
+			<i class="numshopgwc">
+			</i>
+			</a>
 			<ul>
-				
+
 				<li>立即购买</li>
-				<li>加入购物车</li>
+				<li class="jrgwc">加入购物车</li>
 			</ul>
 		</form>
 	</footer>
