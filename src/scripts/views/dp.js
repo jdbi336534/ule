@@ -25,7 +25,7 @@ var pend;
 //getdata("http://service.ule.com/api/item/searchItems.do?jsonApiCallback=jsonp3&storeId=10217&sort=9&start=1&end=3&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=1475581481245", "append", ".shops");
 
 Zepto(function() {
-	$('#tapul').on('tap', function() {
+	$('#ml').on('tap', function() {
 
 		$('.ulfgc').removeClass('hide');
 
@@ -33,8 +33,12 @@ Zepto(function() {
 			$('.ulfgc').addClass('hide');
 		})
 	})
+	$("#back").on('tap', function() {
+		window.history.back();
+
+	})
 	var myScroll = new IScroll('#dp-iscrall', {
-		scrollbars: true,
+		click:true,
 		mouseWheel: true,
 		fadeScrollbars: true
 	});
@@ -62,6 +66,8 @@ Zepto(function() {
 			myScroll.refresh();
 		}
 	});
+
+
 
 	//封装上拉AJAX加载函数
 	function pullDownAction(num, cfn) {

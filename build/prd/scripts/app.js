@@ -66,9 +66,9 @@
 	var define = false;
 
 	var str = __webpack_require__(3);
-	var footer = __webpack_require__(4);
+	var footer = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../tpls/footer.string\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-	var common = __webpack_require__(5);
+	var common = __webpack_require__(4);
 
 	common.renderBody($('body'), str);
 	common.append($('.container'), footer);
@@ -107,12 +107,6 @@
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
-
-	module.exports = "<footer id=\"footer\">    <ul>        <li class=\"active\" data-url=\"/build/index.html\">            <i class=\"iconfont\">&#xe6bb;</i>            <b>首页</b>        </li>        <li data-url=\"/build/search.html\">            <i class=\"iconfont\">&#xe65c;</i>            <b>发现</b>        </li>        <li>            <i class=\"iconfont\">&#xe664;</i>        </li>        <li>            <i class=\"iconfont\">&#xe735;</i>            <b>我的</b>        </li>        <li>            <i class=\"iconfont\">&#xe603;</i>            <b>退出</b>        </li>    </ul></footer>"
-
-/***/ },
-/* 5 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/

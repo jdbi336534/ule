@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(15);
+	module.exports = __webpack_require__(14);
 
 
 /***/ },
@@ -52,12 +52,6 @@
 /* 2 */,
 /* 3 */,
 /* 4 */
-/***/ function(module, exports) {
-
-	module.exports = "<footer id=\"footer\">    <ul>        <li class=\"active\" data-url=\"/build/index.html\">            <i class=\"iconfont\">&#xe6bb;</i>            <b>首页</b>        </li>        <li data-url=\"/build/search.html\">            <i class=\"iconfont\">&#xe65c;</i>            <b>发现</b>        </li>        <li>            <i class=\"iconfont\">&#xe664;</i>        </li>        <li>            <i class=\"iconfont\">&#xe735;</i>            <b>我的</b>        </li>        <li>            <i class=\"iconfont\">&#xe603;</i>            <b>退出</b>        </li>    </ul></footer>"
-
-/***/ },
-/* 5 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -88,6 +82,7 @@
 
 
 /***/ },
+/* 5 */,
 /* 6 */,
 /* 7 */,
 /* 8 */,
@@ -96,28 +91,27 @@
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */,
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*** IMPORTS FROM imports-loader ***/
+	var define = false;
+
+	__webpack_require__(15);
+
+
+
+/***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(16);
+	var str = __webpack_require__(16);
 
-
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*** IMPORTS FROM imports-loader ***/
-	var define = false;
-
-	var str = __webpack_require__(17);
-
-	var common = __webpack_require__(5);
-	var footer = __webpack_require__(4);
+	var common = __webpack_require__(4);
+	var footer = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../tpls/footer.string\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	common.renderBody($('body'), str);
 	common.append($('.container'), footer);
@@ -126,7 +120,7 @@
 
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">  <section>    searching...  </section></div>"

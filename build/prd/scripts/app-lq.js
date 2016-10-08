@@ -44,15 +44,14 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(12);
+	module.exports = __webpack_require__(8);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -83,19 +82,16 @@
 
 
 /***/ },
+/* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(13);
+	__webpack_require__(9);
 
 
 
@@ -103,14 +99,14 @@
 
 
 /***/ },
-/* 13 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(14);
-	var common = __webpack_require__(5);
+	var str = __webpack_require__(10);
+	var common = __webpack_require__(4);
 
 	common.renderBody($('body'), str);
 
@@ -241,7 +237,7 @@
 
 
 /***/ },
-/* 14 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">	<header class=\"headerk\">		<ul id=\"tapul\">			<li class=\"iconfont\">&#xe679;</li>			<li>领券中心</li>			<li class=\"iconfont\">&#xe6b7;</li>		</ul>	</header>	<section class=\"test\" id=\"wrapper\">		<ul class=\"scroll\">			<li class=\"active\">特色美食</li>			<li>家用电器</li>			<li>家居生活</li>			<li>箱包鞋子</li>			<li>美妆/洗护</li>			<li>运动/户外</li>			<li>母婴/玩具</li>			<li>厨卫清洁</li>			<li>进口食品</li>			<li>魅力男装</li>			<li>女装/饰品</li>			<li>手机/数码</li>			<li>汽车用品</li>			<li>电脑办公</li>			<li>商务礼品</li>			<li>图书/影响</li>		</ul>	</section>	<section class=\"bodylq\" id=\"lq-scroll\">		<div class=\"boxx\" id=\"boxx\">			<div class=\"dpq d1\">				<h6>		<a href=\"#\">			抓鱼旗舰店			<span>更多			<i class=\"moreIcon\"></i>			</span>		</a>			</h6>				<ul>					<li>						<div class=\"left\">							<p class=\"p1\">							</p>							<p class=\"p2\">								<span class=\"span1\">抓鱼店铺装用券</span>								<span class=\"span2\">￥<i>5</i></span>								<span class=\"span3\">情满88元使用</span>							</p>						</div>						<div class=\"right\">							<p class=\"wp\">								<p id=\"np\">vx</p>								<p>已领取</p>							</p>							<p class=\"px\">								立即领取							</p>						</div>					</li>					<li>						<div class=\"left\">							<p class=\"p1\">							</p>							<p class=\"p2\">								<span class=\"span1\">抓鱼店铺装用券</span>								<span class=\"span2\">￥<i>5</i></span>								<span class=\"span3\">情满88元使用</span>							</p>						</div>						<div class=\"right\">							<p class=\"wp\">								<p id=\"np\">vx</p>								<p>已领取</p>							</p>							<p class=\"px\">								立即领取							</p>						</div>					</li>					<li>						<div class=\"left\">							<p class=\"p1\">							</p>							<p class=\"p2\">								<span class=\"span1\">抓鱼店铺装用券</span>								<span class=\"span2\">￥<i>5</i></span>								<span class=\"span3\">情满88元使用</span>							</p>						</div>						<div class=\"right\">							<p class=\"wp\">								<p id=\"np\">vx</p>								<p>已领取</p>							</p>							<p class=\"px\">								立即领取							</p>						</div>					</li>					<li>						<div class=\"left\">							<p class=\"p1\">							</p>							<p class=\"p2\">								<span class=\"span1\">抓鱼店铺装用券</span>								<span class=\"span2\">￥<i>5</i></span>								<span class=\"span3\">情满88元使用</span>							</p>						</div>						<div class=\"right\">							<p class=\"wp\">								<p id=\"np\">vx</p>								<p>已领取</p>							</p>							<p class=\"px\">								立即领取							</p>						</div>					</li>				</ul>			</div>			<div class=\"dpq d2\">				<h6>		<a href=\"#\">			抓鱼旗舰店			<span>更多			<i class=\"moreIcon\"></i>			</span>		</a>			</h6>				<ul>					<li>						<div class=\"left\">							<p class=\"p1\">							</p>							<p class=\"p2\">								<span class=\"span1\">抓鱼店铺装用券</span>								<span class=\"span2\">￥<i>5</i></span>								<span class=\"span3\">情满88元使用</span>							</p>						</div>						<div class=\"right\">							<p class=\"wp\">								<p id=\"np\">vx</p>								<p>已领取</p>							</p>							<p class=\"px\">								立即领取							</p>						</div>					</li>				</ul>			</div>		</div>	</section></div>"

@@ -41,8 +41,8 @@ window.onload = function() {
 		click: iScrollClick(), //调用判断函数
 	});
 	var storeId;
-	
- var obj;
+
+	var obj;
 
 	$.ajax({
 		type: "GET",
@@ -88,14 +88,14 @@ window.onload = function() {
 
 	function cl1(cdata) {
 		storeId = cdata.storeId;
-obj = {
-	"id": cdata.listId,
-	"title": cdata.listName,
-	"min": cdata.itemInfo[0].salePrice,
-	"max": cdata.itemInfo[0].marketPrice,
-	"num": 1,
-	"img": cdata.listDescUrl
-}
+		obj = {
+			"id": cdata.listId,
+			"title": cdata.listName,
+			"min": cdata.itemInfo[0].salePrice,
+			"max": cdata.itemInfo[0].marketPrice,
+			"num": 1,
+			"img": cdata.listDescUrl
+		}
 
 		var boxstr = template('listimg', cdata.itemInfo[0]);
 		common.append($(".swiper-wrapper"), boxstr);
@@ -110,22 +110,19 @@ obj = {
 
 		var oldpricetr = template('oldpricedata', cdata.itemInfo[0]);
 		common.append($(".oldjg"), oldpricetr);
-       if(cdata.promotionDesc){
-       	var objpromotionDesc = JSON.parse(cdata.promotionDesc);
-		var actesivtr = template('activedata', objpromotionDesc.events[0].event);
-		common.append($(".activedata"), actesivtr);
-       }else{
-       	$(".activedata").hide();
-       }
-		
+		if(cdata.promotionDesc) {
+			var objpromotionDesc = JSON.parse(cdata.promotionDesc);
+			var actesivtr = template('activedata', objpromotionDesc.events[0].event);
+			common.append($(".activedata"), actesivtr);
+		} else {
+			$(".activedata").hide();
+		}
 
 		common.append($(".smdata"), smstr);
 
-       
-       	var colorstr = template('sxdata', cdata);
+		var colorstr = template('sxdata', cdata);
 		common.append($(".sx"), colorstr);
-       
-		
+
 		var numstr = template('numdata', cdata);
 		common.append($(".numberk"), numstr);
 
@@ -151,7 +148,7 @@ obj = {
 	var numtext;
 	var numint = 0;
 	var flag = false;
-	$('#tapul').on('tap', function() {
+	$('#ml').on('tap', function() {
 
 		$('.ulfgc').removeClass('hide');
 
@@ -159,7 +156,10 @@ obj = {
 			$('.ulfgc').addClass('hide');
 		})
 	})
+    $("#back").on('tap', function() {
+    	window.history.back();
 
+    })
 	$('#add').on('tap', function() {
 
 		numtext = $(".valuek").html();
@@ -179,8 +179,19 @@ obj = {
 		numint = parseFloat(numtext);
 		numshop = numshop + numint;
 		console.log(numshop);
-		obj.num=numshop;
+		obj.num = numshop;
 		$(".numshopgwc").html(numshop);
+		console.log(obj);
+		var str = JSON.stringify(obj);
+		if(getCookie(obj.id)) {
+			var getobj = JSON.parse(getCookie(obj.id));
+			getobj.num = getobj.num + numshop;
+			var getstr = JSON.stringify(getobj);
+			setCookie(obj.id, getstr, 100);
+		} else {
+			setCookie(obj.id, str, 100);
+
+		};
 
 	})
 
@@ -198,28 +209,24 @@ obj = {
 		$('.shopbtn i').removeClass('hide');
 	}
 
+	window.getCookie = function(cookieName) {
+		var cookieValue = "";
+		var strCookies = document.cookie;
+		var arrCookies = strCookies.split("; ");
+		for(var i = 0; i < arrCookies.length; i++) {
+			var arrItem = arrCookies[i].split("=");
+			if(arrItem[0] == cookieName) {
+				cookieValue = arrItem[1];
+			}
+		}
+		return decodeURIComponent(cookieValue);
 
-
-
-/*window.getCookie = function (cookieName){
-	    var cookieValue="";
-	    var strCookies=document.cookie;
-	    var arrCookies=strCookies.split("; ");
-	    for(var i=0;i<arrCookies.length;i++){
-	        var arrItem=arrCookies[i].split("=");
-	        if(arrItem[0]==cookieName){
-	            cookieValue=arrItem[1];
-	        }
-	    }
-	    return decodeURIComponent(cookieValue);
-	}
-function setCookie(name,value,expiredays){
-	    var date=new Date();
-	    date.setDate(date.getDate()+expiredays);
-	    document.cookie=name+"="+encodeURIComponent(value)+";expires="+date;
 	}
 
-var str = JSON.stringify(obj);
-setCookie($id, str, 100);
-		*/
+	function setCookie(name, value, expiredays) {
+		var date = new Date();
+		date.setDate(date.getDate() + expiredays);
+		document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + date;
+	}
+
 }

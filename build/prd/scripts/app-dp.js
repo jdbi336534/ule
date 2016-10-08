@@ -44,15 +44,14 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(9);
+	module.exports = __webpack_require__(5);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -83,28 +82,25 @@
 
 
 /***/ },
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(10);
+	__webpack_require__(6);
 
 
 
 /***/ },
-/* 10 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(11);
-	var common = __webpack_require__(5);
+	var str = __webpack_require__(7);
+	var common = __webpack_require__(4);
 
 	common.renderBody($('body'), str);
 
@@ -130,7 +126,7 @@
 	//getdata("http://service.ule.com/api/item/searchItems.do?jsonApiCallback=jsonp3&storeId=10217&sort=9&start=1&end=3&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=1475581481245", "append", ".shops");
 
 	Zepto(function() {
-		$('#tapul').on('tap', function() {
+		$('#ml').on('tap', function() {
 
 			$('.ulfgc').removeClass('hide');
 
@@ -138,8 +134,12 @@
 				$('.ulfgc').addClass('hide');
 			})
 		})
+		$("#back").on('tap', function() {
+			window.history.back();
+
+		})
 		var myScroll = new IScroll('#dp-iscrall', {
-			scrollbars: true,
+			click:true,
 			mouseWheel: true,
 			fadeScrollbars: true
 		});
@@ -167,6 +167,8 @@
 				myScroll.refresh();
 			}
 		});
+
+
 
 		//封装上拉AJAX加载函数
 		function pullDownAction(num, cfn) {
@@ -252,12 +254,11 @@
 	})
 
 
-
 /***/ },
-/* 11 */
+/* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"ulfgc hide\"><ul class=\"navul1\">				<li class=\"iconfont\">&#xe630;					<a href=\"/build/index.html\">首页</a>				</li>				<li class=\"iconfont\">&#xe699;					<a href=\"\">分类</a>				</li>				<li class=\"iconfont\">&#xe608;					<a href=\"\">购物车</a>				</li>				<li class=\"iconfont\">&#xe6b8;					<a href=\"\">我的邮乐</a>				</li>	</ul></div><section id=\"dp-iscrallbox\"><section id=\"dp-iscrall\"><section class=\"body\"><header class=\"headerk\">		<ul id=\"tapul\">			<li class=\"iconfont\">&#xe679;</li>			<li>商店名称</li>			<li class=\"iconfont\">&#xe6b7;</li>		</ul>	</header>	<section class=\"bodybox\">		<div class=\"search-shop\">		   <div class=\"searchbox\">		   <input type=\"text\" placeholder=\"请输入关键字查找商品\" id=\"key\" />			<span id=\"searchbtn\"></span>		   </div>					</div>		<div class=\"dppj\">			<p>				店铺星级<span></span>			</p>			<ul>				<li>描述相符:<i>5</i></li>				<li>服务态度:<i>5</i></li>				<li>发货速度:<i>5</i></li>			</ul>			<span>			    <a href=\"javascript:void(0)\" class=\"collect_btn\"></a>			    <a href=\"javascript:void(0)\" class=\"collect_btn  collected  hide\"></a>			</span>					</div>		<div class=\"shops\">		<script id=\"bestshop\" type=\"text/html\">			<ul class=\"bestgoods\">						   {{each listInfos as value i}}				<li class=\"nofrom1to3\">									<a href=\"#\">					    <i class=\"first0\"></i>						<img src={{value.imgUrl}} />						<p>{{value.listName}}</p>					</a>				</li>				{{/each}}							</ul>		</script>						<script id=\"norshops\" type=\"text/html\">			<ul class=\"norshops\">			    {{each listInfos as value i}}				<li>					<a href=\"#\">						<img src={{value.imgUrl}} />						<span>						<b>￥{{value.salePrice}}</b>						<b>￥{{value.marketPrice}}</b>						</span>												<p>{{value.listName}}</p>					</a>				</li>				{{/each}}			</ul>		</script>		</div>	</section></section></section></section>"
+	module.exports = "<div class=\"ulfgc hide\"><ul class=\"navul1\">				<li class=\"iconfont\">&#xe630;					<a href=\"/build/index.html\">首页</a>				</li>				<li class=\"iconfont\">&#xe699;					<a href=\"\">分类</a>				</li>				<li class=\"iconfont\">&#xe608;					<a href=\"\">购物车</a>				</li>				<li class=\"iconfont\">&#xe6b8;					<a href=\"\">我的邮乐</a>				</li>	</ul></div><section id=\"dp-iscrallbox\"><section id=\"dp-iscrall\"><section class=\"body\"><header class=\"headerk\">		<ul id=\"tapul\">			<li class=\"iconfont\" id=\"back\">&#xe679;</li>			<li>商店名称</li>			<li class=\"iconfont\" id=\"ml\">&#xe6b7;</li>		</ul>	</header>	<section class=\"bodybox\">		<div class=\"search-shop\">		   <div class=\"searchbox\">		   <input type=\"text\" placeholder=\"请输入关键字查找商品\" id=\"key\" />			<span id=\"searchbtn\"></span>		   </div>					</div>		<div class=\"dppj\">			<p>				店铺星级<span></span>			</p>			<ul>				<li>描述相符:<i>5</i></li>				<li>服务态度:<i>5</i></li>				<li>发货速度:<i>5</i></li>			</ul>			<span>			    <a href=\"javascript:void(0)\" class=\"collect_btn\"></a>			    <a href=\"javascript:void(0)\" class=\"collect_btn  collected  hide\"></a>			</span>					</div>		<div class=\"shops\">		<script id=\"bestshop\" type=\"text/html\">			<ul class=\"bestgoods\">						   {{each listInfos as value i}}				<li class=\"nofrom1to3\">				<a href=\"/build/detail.html?listId={{value.listId}}\">										    <i class=\"first0\"></i>						<img src={{value.imgUrl}} />						<p>{{value.listName}}</p>					</a>				</li>				{{/each}}							</ul>		</script>						<script id=\"norshops\" type=\"text/html\">			<ul class=\"norshops\">			    {{each listInfos as value i}}				<li>					<a href=\"/build/detail.html?listId={{value.listId}}\">						<img src={{value.imgUrl}} />						<span>						<b>￥{{value.salePrice}}</b>						<b>￥{{value.marketPrice}}</b>						</span>												<p>{{value.listName}}</p>					</a>				</li>				{{/each}}			</ul>		</script>		</div>	</section></section></section></section>"
 
 /***/ }
 /******/ ]);

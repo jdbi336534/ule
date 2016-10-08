@@ -19,9 +19,9 @@
 
 	<header class="headerk">
 		<ul id="tapul">
-			<li class="iconfont">&#xe679;</li>
+			<li class="iconfont" id="back">&#xe679;</li>
 			<li>商品详情</li>
-			<li class="iconfont">&#xe6b7;</li>
+			<li class="iconfont" id="ml">&#xe6b7;</li>
 		</ul>
 		
 	</header>
@@ -173,7 +173,7 @@
 	<footer class="footerk">
 		<form>
 			<a href="#" class="collectbtn"></a>
-			<a href="#" class="shopbtn">
+			<a href="/build/cart.html" class="shopbtn">
 			<i class="numshopgwc">
 			</i>
 			</a>

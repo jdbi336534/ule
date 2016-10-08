@@ -21,9 +21,9 @@
 
 <header class="headerk">
 		<ul id="tapul">
-			<li class="iconfont">&#xe679;</li>
+			<li class="iconfont" id="back">&#xe679;</li>
 			<li>商店名称</li>
-			<li class="iconfont">&#xe6b7;</li>
+			<li class="iconfont" id="ml">&#xe6b7;</li>
 		</ul>	
 </header>
 	<section class="bodybox">
@@ -55,8 +55,8 @@
 			
 			   {{each listInfos as value i}}
 				<li class="nofrom1to3">
-				
-					<a href="#">
+				<a href="/build/detail.html?listId={{value.listId}}">
+					
 					    <i class="first0"></i>
 						<img src={{value.imgUrl}} />
 						<p>{{value.listName}}</p>
@@ -72,7 +72,7 @@
 			<ul class="norshops">
 			    {{each listInfos as value i}}
 				<li>
-					<a href="#">
+					<a href="/build/detail.html?listId={{value.listId}}">
 						<img src={{value.imgUrl}} />
 						<span>
 						<b>￥{{value.salePrice}}</b>
