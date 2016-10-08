@@ -82,7 +82,7 @@
 				
 			</i>
 				<b class="activedata">
-				<img src="build/images/mj.png"/>
+				<img src="images/mj.png"/>
 				<script id="activedata" type="text/html">
 				{{eventtitle}}
 				 </script>
@@ -97,7 +97,7 @@
 				<p class="sx">
                   <script id="sxdata" type="text/html">
 					<span class="colorname">
-					<i>{{colors[0].colorName}}</i>
+					<i>{{colors[0].colorName}}多味花生</i>
 					</span>
 					<span class="specificationName">
 					<i>{{specifications[0].specificationName}}</i>
@@ -154,7 +154,7 @@
 				<ul>
 				   {{each listInfos as value i}}
 					<li>
-						<a href="#">
+						<a href="/build/detail.html?listId={{value.listId}}">
 							<img src={{value.imgUrl}} />
 							<span class="newprice">￥{{value.salePrice}}</span>
 							<span class="oldprice">￥{{value.marcketPrice}}</span>

@@ -118,7 +118,7 @@
 
 	window.onload = function () {
 	  var myScroll = new IScroll("#lq-scroll");
-	  var myscroll=new IScroll("#wrapper",{hScrollbar:false, vScrollbar:false});
+	  var myscroll2=new IScroll("#wrapper",{hScrollbar:false, vScrollbar:false});
 	   
 	};
 	/*
