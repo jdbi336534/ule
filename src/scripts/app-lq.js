@@ -1,0 +1,5 @@
+require('./views/lq.js');
+
+
+
+

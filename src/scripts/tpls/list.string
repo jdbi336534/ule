@@ -90,18 +90,14 @@
 				</ul>
 
 				<ul id="ul-list">
-					<!--<li>
-						<a href="#" listingid="1317405">
-							<img src="http://pic2.ule.com/pic/user_800111024/product/prd20160110/d4d3325040c2beff_p800x800.jpg">
-							<p class="name">【洛川<em>苹果</em>】陕西<em>苹果</em>延安洛川<em>苹果</em>红富士<em>苹果</em>新鲜水果<em>苹果</em>约18斤40枚80装</p>
-							<p class="price"><span class="minPrice">¥138.0</span><span class="maxPrice"><del>¥218.0</del></span></p>
-						</a>
-					</li>-->
+					
 					<script id="list" type="text/html">
+
 
 						{{each listInfos as value i}}
 						<li>
-							<a href="#" listingid={{value.listingId}}>
+							<a href="/build/detail.html?listId={{value.listingId}}" listingid={{value.listingId}}>
+							
 								<img src={{value.imgurl}}>
 								<p class="name">{{value.listname}}</p>
 								<p class="price"><span class="minPrice">¥{{value.pointPrice}}</span><span class="maxPrice"><del>¥{{value.maxPrice}}</del></span></p>

@@ -4,21 +4,28 @@ var common = require('../utils/common.util.js');
 
 common.renderBody($('body'), list);
 
-
 Zepto(function() {
+	
+	
 	var url='http://np.ule.com/item/searchItems.do?jsonApiCallback=jsonp';
 	var urljsonp=1;
-	var url2='&fsop=0&start=';
+	var fsop='&fsop=';
+	var url2='&start=';
 	var url3='&end=';
-	var url4='&keyWords=%25E8%258B%25B9%25E6%259E%259C&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=1475305091958'
+	var url4='&keyWords=%25E8%258B%25B9%25E6%259E%259C&appkey=4b9f40822ddd5cd5&version_no=apr_2010_build01&_=';
 	var temp=[];
-	var times=1;
-
+	var times=0;
+	var times1=0;
+	var times2=0;
+	var times3=0;
+	var flag=0;
+start(0);
 //iscroll初始化
 	var myScroll = new IScroll('#index-scroll', {
 		scrollbars: true,
 		mouseWheel: true,
-		fadeScrollbars:true
+		fadeScrollbars:true,
+		click:true
 
 	});
 
@@ -29,36 +36,37 @@ Zepto(function() {
 			 if((this.maxScrollY-this.y)>=-20){
 				console.log('ok');
 				times++;
-				pullDownAction(times);
-			
-
+				switch(flag){
+					case 0: times1++; pullDownAction(times1,0); break;
+					case 2: times2++; pullDownAction(times2,2); break;
+					case 3: times3++; pullDownAction(times3,3); break;
+				}
 
 			 }
 	});
 
 //封装上拉AJAX加载函数
- function pullDownAction(num){
+ function pullDownAction(num,list){
  	//num need >=2
  	var start=10 * (num - 1) + 1;
  	var end=10 * num;
- 	console.log(url+num+url2+start+url3+end+url4);
+ 	var data=new Date().getTime();
+ 	// var urll=url+num+fsop+list+url2+start+url3+end+url4+data;
+ 	//console.log(url+num+url2+start+url3+end+url4+data);
 		$.ajax({
 		type: "GET",
-		url: url+num+url2+start+url3+end+url4,
+		url: url+times+fsop+list+url2+start+url3+end+url4+data,
 		dataType: "jsonp",
 		success: function(data) {
-		// console.log(data);
-		// console.log(data.listInfo.listInfos[0].listname);
+		
 		if(data.returnCode=='0000'){
-			for(var i=0;i<data.listInfo.length;i++){
-			temp.push(data.listInfo[i]);
-		}
-		template.config("escape", false);
-		 var html = template('list', temp);
-		 $('.loadli').before(html);
-		 myScroll.refresh();
+			temp=data.listInfo;
+			template.config("escape", false);
+			var html = template('list', temp);
+			$('.loadli').before(html);
+			myScroll.refresh();
 		}else{
-			 $('.loadli').html('没有更多的数据了！');
+			$('.loadli').html('没有更多的数据了！');
 		}
 		
 		}
@@ -68,20 +76,21 @@ Zepto(function() {
 }
 
 //打开页面首次加载数据
-$.ajax({
+function start(list){
+	times1=0;
+	times2=0;
+	times3=0;
+	times++;
+	var data=new Date().getTime();
+	$.ajax({
 		type: "GET",
-		url: url+urljsonp+url2+1+url3+10+url4,
+		url: url+times+fsop+list+url2+1+url3+10+url4+data,
 		dataType: "jsonp",
 		success: function(data) {
 		// console.log(data.returnCode);
-		// console.log(data.listInfo.listInfos[0].listname);
+		 //console.log(data.listInfo.listInfos);
 
 		temp=data.listInfo;
-		 // var newdata=temp.listInfos;
-			// 	 console.log(newdata);
-			// 	 newdata.sort(function(a,b){
-			// 	 	return a.pointPrice-b.pointPrice;
-			// 	 });
 		template.config("escape", false);
 		 var html = template('list', temp);
 		 $('.loadli').before(html);
@@ -91,6 +100,8 @@ $.ajax({
 		}
 	});
 	
+}
+
 
 	//----------------------------------
 	var taptime = 0;
@@ -101,72 +112,44 @@ $.ajax({
 		if($(this).find('span').hasClass('hot')) {
 			$('.price').find('.up').css('display', "none");
 			$('.price').find('.down').css('display', "none");
+			flag=0;
+		$('#ul-list>li').remove();
+		$('#ul-list').append('<li class="loadli"><span>正在加载数据...</span></li>');
+		myScroll.refresh();
+		start(0);
 		}
 
 		if($(this).find('.price').hasClass('focus')) {
 			taptime++;
-			if(taptime == 2) {
+			if(taptime == 1) {
 				_this.find('.up').css('display', "inline-block");
 				_this.find('.down').css('display', "none");
-	// 		 	console.log(temp.listInfos[0].pointPrice);
-	// 			 var newdata=temp.listInfos;
-	// 			 console.log(newdata);
-	// 			 newdata.sort(function(a,b){
-	// 			 	return a.pointPrice-b.pointPrice;
-	// 			 });
-	// 			console.log(temp);
- //              var str='	{{each listInfos as value i}}\
-	// 					<li>\
-	// 						<a href="#" listingid={{value.listingId}}>\
-	// 							<img src={{value.imgurl}}>\
-	// 							<p class="name">{{value.listname}}</p>\
-	// 							<p class="price"><span class="minPrice">¥{{value.pointPrice}}</span><span class="maxPrice"><del>¥{{value.maxPrice}}</del></span></p>\
-	// 						</a>\
-	// 					</li>\
-	// 					{{/each}}';
- // $('#list').html('');
- //           $('#list').html(str);
- // var html = template('list', temp);
-	// 	 $('.loadli').before(html);
-	// 	 myScroll.refresh(); 
+	
+		flag=3;
 
-
-             
- //           $('body').html('');
- //           common.renderBody($('body'), list);
- // template.config("escape", false);
-	// 	 var html = template('list', temp);
-	// 	 $('.loadli').before(html);
-	// 	 var myScroll = new IScroll('#index-scroll', {
-	// 	scrollbars: true,
-	// 	mouseWheel: true,
-	// 	fadeScrollbars:true
-	// });
-	// $('.iScrollVerticalScrollbar').css('width','3px');
-	// 	 myScroll.refresh(); 
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-			} else if(taptime == 3) {
-				taptime = 1;
+		$('#ul-list>li').remove();
+		$('#ul-list').append('<li class="loadli"><span>正在加载数据...</span></li>');
+		myScroll.refresh();
+		start(3);
+			} else if(taptime == 2) {
+				taptime = 0;
 				_this.find('.up').css('display', "none");
 				_this.find('.down').css('display', "inline-block");
+				$('#ul-list>li').remove();
+		flag=2;
+		$('#ul-list>li').remove();
+		$('#ul-list').append('<li class="loadli"><span>正在加载数据...</span></li>');
+		myScroll.refresh();
+		start(2);
+
+
 			}
 
 		}
 
 	});
+
+
 
 	//过滤
 	$('.filter').on('tap',function(){

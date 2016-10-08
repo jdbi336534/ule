@@ -40,18 +40,17 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(8);
+	module.exports = __webpack_require__(19);
 
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+
+/***/ 6:
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -81,29 +80,28 @@
 
 
 /***/ },
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(9);
+	__webpack_require__(20);
 
 
 
 /***/ },
-/* 9 */
+
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(10);
+	var str = __webpack_require__(21);
 
-	var common = __webpack_require__(4);
+	var common = __webpack_require__(6);
 
 	common.renderBody($('body'), str);
 
@@ -200,10 +198,12 @@
 
 
 /***/ },
-/* 10 */
+
+/***/ 21:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">    <header>        <ul>            <li> <a href=\"#\"><i class=\"iconfont\">&#xe679;</i></a></li>            <li>                <span>登录</span>            </li>           <li> <a href=\"#\"><i class=\"iconfont\">&#xe657;</i></a></li>        </ul>    </header>    <section>    	    <div class=\"content\">    <form action=\"/user/login\" method=\"post\" id=\"loginForm\">    <input type=\"hidden\" name=\"freeLogin\" id=\"freeLogin\" value=\"Y\">    	<div>    		<input type=\"text\" placeholder=\"请输入您的手机号或email\" id=\"username\" name=\"username\" maxlength=\"100\" value=\"\">    	<p class=\"error\" id=\"userErr\">&nbsp;</p>    	</div>    	<div>    		<input type=\"password\" placeholder=\"请输入密码\" id=\"userpwd\" name=\"passwd\" maxlength=\"100\" value=\"\">    	<p class=\"error\" id=\"uerpwdErr\">&nbsp;</p>    	</div>        <p class=\"selectp\">       <span><i class=\"focus\"></i>记住密码</span>        <a href=\"#\">找回密码</a></p>    	<!-- <div>        <p>    		<span>    			<i class=\"iconfont\">&#xe6d4;</i>    			<p>记住密码</p>    		</span>    		<a href=\"#\">找回密码</a>            </p>    	</div> -->        <ul>            <li class=\"regBtn\"><a href=\"reg.html\">注册</a></li>            <li class=\"loginBtn\"><a href=\"javascript:void(0);\">登录</a></li>        </ul>    	    </div>    <div class=\"union_login\">        <div class=\"title\"><h3>一键登录</h3></div>                <a href=\"#\" class=\"qq_login\"><img src=\"https://secure.ule.com/ulewap/i/qq_icon.png\"><span>QQ</span></a>        <a href=\"#\" class=\"sina_login\"><img src=\"https://secure.ule.com/ulewap/i/sina_icon.png\"><span>新浪微博</span></a>    </div>     </form>    </section></div>"
+	module.exports = "<div class=\"container\">    <header>        <ul>            <li> <a href=\"index.html\"><i class=\"iconfont\">&#xe679;</i></a></li>            <li>                <span>登录</span>            </li>           <li> <a href=\"login.html\"><i class=\"iconfont\">&#xe657;</i></a></li>        </ul>    </header>    <section>    	    <div class=\"content\">    <form action=\"/user/login\" method=\"post\" id=\"loginForm\">    <input type=\"hidden\" name=\"freeLogin\" id=\"freeLogin\" value=\"Y\">    	<div>    		<input type=\"text\" placeholder=\"请输入您的手机号或email\" id=\"username\" name=\"username\" maxlength=\"100\" value=\"\">    	<p class=\"error\" id=\"userErr\">&nbsp;</p>    	</div>    	<div>    		<input type=\"password\" placeholder=\"请输入密码\" id=\"userpwd\" name=\"passwd\" maxlength=\"100\" value=\"\">    	<p class=\"error\" id=\"uerpwdErr\">&nbsp;</p>    	</div>        <p class=\"selectp\">       <span><i class=\"focus\"></i>记住密码</span>        <a href=\"#\">找回密码</a></p>    	<!-- <div>        <p>    		<span>    			<i class=\"iconfont\">&#xe6d4;</i>    			<p>记住密码</p>    		</span>    		<a href=\"#\">找回密码</a>            </p>    	</div> -->        <ul>            <li class=\"regBtn\"><a href=\"reg.html\">注册</a></li>            <li class=\"loginBtn\"><a href=\"javascript:void(0);\">登录</a></li>        </ul>    	    </div>    <div class=\"union_login\">        <div class=\"title\"><h3>一键登录</h3></div>                <a href=\"#\" class=\"qq_login\"><img src=\"https://secure.ule.com/ulewap/i/qq_icon.png\"><span>QQ</span></a>        <a href=\"#\" class=\"sina_login\"><img src=\"https://secure.ule.com/ulewap/i/sina_icon.png\"><span>新浪微博</span></a>    </div>     </form>    </section></div>"
 
 /***/ }
-/******/ ]);
+
+/******/ });

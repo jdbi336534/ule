@@ -2,7 +2,7 @@
   <header class="npheader">
     <div class="ctit_list"></div>
     <input type="text" placeholder="农家自产美食" id="ckeyWord">
-    <div class="clogin">登录</div>
+    <div class="clogin"><a href="login.html">登录</a></div>
   </header>
   <section class="section-con">
     <div class="swiper-container">
@@ -45,8 +45,8 @@
           <a class="big-l" href="#"><img src="http://pic1.ule.com/item/user_0102/desc20160905/447f8d05bdfe7034_-1x-1.jpg"></a>
           <a class="big-r" href="#"><img src="http://pic1.ule.com/item/user_0102/desc20160905/3bc3e6d34902a377_-1x-1.jpg"></a>
           <div class="small">
-            <a class="" href="#"><img src="http://pic3.ule.com/item/user_0102/desc20160905/115215bd4011992f_-1x-1.jpg"></a>
-            <a class="" href="#"><img src="http://pic2.ule.com/item/user_0102/desc20160923/fb11041d4b76b9a5_-1x-1.jpg"></a>
+            <a class="" href="/build/detail.html?listId=1216067"><img src="http://pic3.ule.com/item/user_0102/desc20160905/115215bd4011992f_-1x-1.jpg"></a>
+            <a class="" href="/build/detail.html?listId=1595537"><img src="http://pic2.ule.com/item/user_0102/desc20160923/fb11041d4b76b9a5_-1x-1.jpg"></a>
           </div>
         </div>
       </div>
@@ -67,18 +67,18 @@
       <h3 class="search_box">
         <form id="searchForm">
           <input type="search" id="searchkeyWord" maxlength="30" placeholder="农家自产美食"/>
-          <span id="search_btn">搜索</span>
+          <a id="search_btn" href="javascript:void(0);">搜索</a>
           <i class="clear" style="display: none;"></i>
         </form>
       </h3>
       <div class="search_wrap">
         <h3>热门搜索</h3>
         <ul class="clearfix">
-          <li><a href="#">茶叶</a></li>
-          <li><a href="#">鸡蛋</a></li>
-          <li><a href="#">大米</a></li>
-          <li><a href="#">菌菇</a></li>
-          <li><a href="#">蜂蜜</a></li>
+          <li><a href="http://www.ule.com/ulewap/npwap.html?keyWords=%E8%8C%B6%E5%8F%B6">茶叶</a></li>
+          <li><a href="http://www.ule.com/ulewap/npwap.html?keyWords=%E9%B8%A1%E8%9B%8B">鸡蛋</a></li>
+          <li><a href="http://www.ule.com/ulewap/npwap.html?keyWords=%E5%A4%A7%E7%B1%B3">大米</a></li>
+          <li><a href="http://www.ule.com/ulewap/npwap.html?keyWords=%E8%8F%8C%E8%8F%87">菌菇</a></li>
+          <li><a href="http://www.ule.com/ulewap/npwap.html?keyWords=%E8%9C%82%E8%9C%9C">蜂蜜</a></li>
         </ul>
       </div>
     </div>

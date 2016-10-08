@@ -539,8 +539,9 @@ table {
   table-layout: fixed;
   text-align: left; }
 
-ul,
+ul
 ol,
+li,
 menu {
   list-style: none; }
 
@@ -650,8 +651,8 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
-body {
-  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; }
+[type=tpl] {
+  display: none; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -662,13 +663,8 @@ body {
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   src: url("/build/images/iconfont/iconfont.woff") format("woff"), url("/build/images/iconfont/iconfont.ttf") format("truetype"); }
 
-@font-face {
-  font-family: 'iconfont';
-  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/iconfont/iconfont0.woff") format("woff"), url("/build/images/iconfont/iconfont0.ttf") format("truetype"); }
-
 .iconfont {
-  font-family: "iconfont" !important; }
+  font-family: iconfont; }
 
 .container {
   width: 100%;

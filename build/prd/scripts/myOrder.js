@@ -148,7 +148,7 @@ $(document).ready(function() {
 		// str  = JSON.parse(getCookie($id));
 		// console.log(str.id);
 		thisInput.find('input').val(num);
-		$sum.text(unitPrice * num + '.00');
+		$sum.text((unitPrice * num ).toFixed(2));
 		getCountMobile();
 		return false;
 	});
@@ -180,7 +180,7 @@ $(document).ready(function() {
 		}
 		var str = JSON.stringify(obj);
 		setCookie($id,str,100);
-		$sum.text(unitPrice * num + '.00');
+		$sum.text((unitPrice * num ).toFixed(2));
 		getCountMobile();
 		return false;
 	});

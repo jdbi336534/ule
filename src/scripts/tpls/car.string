@@ -1,6 +1,6 @@
 <div class='main'>
   <div class="site-nav">
-    <div class="navLeft"><span><</span></div>
+    <div class="navLeft"><a href="javascript:history.go(-1)"><span><</span></a></div>
     <div class="navCenter">购物车<span></span></div>
     <div class="navRight"></div>
   </div>

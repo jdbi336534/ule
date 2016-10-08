@@ -1,7 +1,7 @@
 <div class="container">
  <header>
         <ul>
-            <li> <a href="#"><i class="iconfont">&#xe679;</i></a></li>
+            <li> <a href="login.html"><i class="iconfont">&#xe679;</i></a></li>
             <li>
                 <span>注册</span>
             </li>

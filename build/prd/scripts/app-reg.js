@@ -40,18 +40,17 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(11);
+	module.exports = __webpack_require__(25);
 
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+
+/***/ 6:
 /***/ function(module, exports) {
 
 	/*** IMPORTS FROM imports-loader ***/
@@ -81,32 +80,28 @@
 
 
 /***/ },
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */
+
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	__webpack_require__(12);
+	__webpack_require__(26);
 
 
 
 /***/ },
-/* 12 */
+
+/***/ 26:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*** IMPORTS FROM imports-loader ***/
 	var define = false;
 
-	var str = __webpack_require__(13);
+	var str = __webpack_require__(27);
 
-	var common = __webpack_require__(4);
+	var common = __webpack_require__(6);
 
 	common.renderBody($('body'), str);
 
@@ -233,10 +228,12 @@
 
 
 /***/ },
-/* 13 */
+
+/***/ 27:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\"> <header>        <ul>            <li> <a href=\"#\"><i class=\"iconfont\">&#xe679;</i></a></li>            <li>                <span>注册</span>            </li>            <li class=\"iconfont\"></li>        </ul>    </header>    <section>    <div class=\"content\">    <p class=\"tip\">您可以通过以下操作完成手机注册。登录用户名为您的手机号码。</p>		<div class=\"formcontent\">			<form action=\"/user/register\" id=\"regForm\" method=\"post\">				<div class=\"row\">			<div class=\"checkcode\">				<input type=\"text\" name=\"mobile\" id=\"phoneNum\" class=\"randcode\" placeholder=\"请输入您的手机号\" maxlength=\"11\">				<a class=\"getCode\" id=\"getCode\">获取验证码</a>			</div>			<p class=\"error\" id=\"phoneNumErr\">&nbsp;</p>		</div>		<div class=\"row\">			<input type=\"number\" name=\"validateCode\" placeholder=\"请输入验证码\" maxlength=\"8\" id=\"phoneCode\">			<p class=\"error\" id=\"phoneCodeErr\">&nbsp;</p>		</div>		<div class=\"row\">				<input type=\"password\" name=\"pwd\" placeholder=\"请输入您的密码\" maxlength=\"50\" id=\"password\">				<p class=\"pwdTips\" id=\"pwdTips\" style=\"display: none;\">密码长度为8-50位，必须由字母，数字和符号两种以上组成</p>                <p class=\"error\" id=\"passwordErr\">&nbsp;</p>		</div>		<div class=\"row\">			<input type=\"password\" name=\"confirmPwd\" placeholder=\"请再次确认您的密码\" maxlength=\"50\" id=\"repeatpassword\">			<p class=\"error\" id=\"repeatpasswordErr\">&nbsp;</p>		</div>		<a class=\"btn\">注册</a>		</form>		</div>    </div>    </section></div>"
+	module.exports = "<div class=\"container\"> <header>        <ul>            <li> <a href=\"login.html\"><i class=\"iconfont\">&#xe679;</i></a></li>            <li>                <span>注册</span>            </li>            <li class=\"iconfont\"></li>        </ul>    </header>    <section>    <div class=\"content\">    <p class=\"tip\">您可以通过以下操作完成手机注册。登录用户名为您的手机号码。</p>		<div class=\"formcontent\">			<form action=\"/user/register\" id=\"regForm\" method=\"post\">				<div class=\"row\">			<div class=\"checkcode\">				<input type=\"text\" name=\"mobile\" id=\"phoneNum\" class=\"randcode\" placeholder=\"请输入您的手机号\" maxlength=\"11\">				<a class=\"getCode\" id=\"getCode\">获取验证码</a>			</div>			<p class=\"error\" id=\"phoneNumErr\">&nbsp;</p>		</div>		<div class=\"row\">			<input type=\"number\" name=\"validateCode\" placeholder=\"请输入验证码\" maxlength=\"8\" id=\"phoneCode\">			<p class=\"error\" id=\"phoneCodeErr\">&nbsp;</p>		</div>		<div class=\"row\">				<input type=\"password\" name=\"pwd\" placeholder=\"请输入您的密码\" maxlength=\"50\" id=\"password\">				<p class=\"pwdTips\" id=\"pwdTips\" style=\"display: none;\">密码长度为8-50位，必须由字母，数字和符号两种以上组成</p>                <p class=\"error\" id=\"passwordErr\">&nbsp;</p>		</div>		<div class=\"row\">			<input type=\"password\" name=\"confirmPwd\" placeholder=\"请再次确认您的密码\" maxlength=\"50\" id=\"repeatpassword\">			<p class=\"error\" id=\"repeatpasswordErr\">&nbsp;</p>		</div>		<a class=\"btn\">注册</a>		</form>		</div>    </div>    </section></div>"
 
 /***/ }
-/******/ ]);
+
+/******/ });

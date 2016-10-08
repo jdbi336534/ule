@@ -323,8 +323,8 @@ body {
 .navLeft span {
   display: inline-block;
   font-size: 0.8rem;
-  font-weight: bold;
-  color: #777B83;
+  color: #bbb;
+  font-weight: normal;
   margin-left: 0.6rem;
   cursor: pointer;
 }
@@ -403,7 +403,7 @@ body {
 }
 /* line 120, ../sass/mobile.scss */
 .changeCount input {
-  width: 1rem;
+  width: 2rem;
   border: 1px solid #9c9c9c;
   outline: none;
   color: #878787;

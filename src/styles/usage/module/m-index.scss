@@ -86,6 +86,7 @@
           margin: 20px auto;
           height: 132px;
           .swiper-slide {
+            overflow: hidden;
             width: 29%;
             margin-right: 5px;
             border: 1px solid #e6e6e6;
@@ -322,6 +323,7 @@
             border: 1px solid #e6e6e6;
             border-radius: 8px;
             margin: 0 1.5%;
+            overflow: hidden;
             div.product-pic{
               padding: 10px 10px 5px;
               width:100%;
@@ -530,6 +532,7 @@
       }
     }
     .fixed_btn{
+      z-index: 999999;
       position: fixed;
       right: 10px;
       bottom: 14%;

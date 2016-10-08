@@ -1,0 +1,2 @@
+require('./views/dp.js');
+

@@ -539,8 +539,8 @@ table {
   table-layout: fixed;
   text-align: left; }
 
-ul,
-ol,
+ul ol,
+li,
 menu {
   list-style: none; }
 
@@ -649,8 +649,8 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
-body {
-  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; }
+[type=tpl] {
+  display: none; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -661,13 +661,11 @@ body {
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   src: url("/build/images/iconfont/iconfont.woff") format("woff"), url("/build/images/iconfont/iconfont.ttf") format("truetype"); }
 
-@font-face {
-  font-family: 'iconfont';
-  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/iconfont/iconfont0.woff") format("woff"), url("/build/images/iconfont/iconfont0.ttf") format("truetype"); }
-
 .iconfont {
-  font-family: "iconfont" !important; }
+  font-family: iconfont; }
+
+body {
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; }
 
 .container header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0)));
@@ -685,7 +683,6 @@ body {
     margin: 0 4px;
     height: 40px;
     width: 40px;
-    background: url(../../images/ulelogo.png) center center no-repeat;
     background: url(/build/images/ulelogo.png) center center no-repeat;
     background-size: 40px auto; }
   .container header #ckeyWord {
@@ -705,9 +702,13 @@ body {
     margin: 0 4px;
     height: 40px;
     line-height: 40px;
-    color: #fff;
     width: 40px;
     font-weight: bold; }
+    .container header .clogin a {
+      display: block;
+      color: #fff;
+      width: 100%;
+      height: 100%; }
 
 .container .npheader {
   background: #e70;
