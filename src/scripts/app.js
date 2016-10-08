@@ -1,1 +1,0 @@
-require('./views/list.js');
