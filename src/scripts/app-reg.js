@@ -1,0 +1,1 @@
+require('./views/reg.js');
