@@ -1,6 +1,11 @@
+
 $baseColor: #F52626;
 body{
   font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+
+*{
+  @include  box-sizing();
 }
 
 @font-face {
@@ -11,13 +16,13 @@ body{
      url('/build/images/iconfont/iconfont.ttf') format('truetype');
 }
 
-// @font-face {
-//     font-family: 'iconfont';
-//     /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-//     src:url('/build/images/iconfont/iconfont0.woff') format('woff'),
-//     /* chrome、firefox */
-//      url('/build/images/iconfont/iconfont0.ttf') format('truetype');
-// }
+@font-face {
+    font-family: 'iconfont';
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    src:url('/build/images/iconfont/iconfont0.woff') format('woff'),
+    /* chrome、firefox */
+     url('/build/images/iconfont/iconfont0.ttf') format('truetype');
+}
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -80,3 +85,6 @@ body{
     }
   }
 }
+
+
+

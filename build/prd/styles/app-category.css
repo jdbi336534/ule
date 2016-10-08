@@ -653,10 +653,19 @@ a {
 body {
   font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: 'iconfont';
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   src: url("/build/images/iconfont/iconfont.woff") format("woff"), url("/build/images/iconfont/iconfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'iconfont';
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  src: url("/build/images/iconfont/iconfont0.woff") format("woff"), url("/build/images/iconfont/iconfont0.ttf") format("truetype"); }
 
 .iconfont {
   font-family: "iconfont" !important; }
