@@ -136,8 +136,9 @@ table {
 }
 
 // 1. 清除列表默认序号
-ul,
+ul
 ol,
+li,
 menu {
     list-style: none;
 }

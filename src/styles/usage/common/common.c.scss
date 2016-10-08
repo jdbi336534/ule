@@ -1,7 +1,10 @@
+body{
+      font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
 %header{
   header{
     // gradient:渐变 参数： 方式，起始位置，结束位置，from(第一帧)，to(最后一帧)，color-stop中间插值
-    // @include gradient(linear,top,from(rgba(0, 0, 0,1)) to( rgba(255,255,255,0)));
+    background:-webkit-gradient(linear,left top,left bottom,from(rgba(0, 0, 0,0.5)),to(rgba(255,255,255,0)));
     position: fixed;
     top: 0;
     height:40px;
@@ -12,7 +15,7 @@
       margin:0 4px;
       height: 40px;
       width:40px;
-      background:url(../../images/ulelogo.png) center center no-repeat;
+      background:url(/build/images/ulelogo.png) center center no-repeat;
       background-size: 40px auto;
     }
     #ckeyWord{
@@ -33,6 +36,16 @@
       color:#fff;
       width: 40px;
       font-weight: bold;
+    }
+  }
+  .npheader{
+    background:#e70;
+    position: relative;
+    .ctit_list{
+      width:65px;
+      background:url(/build/images/nplogo.png) center center no-repeat;
+      background-size: 65px auto;
+
     }
   }
 }

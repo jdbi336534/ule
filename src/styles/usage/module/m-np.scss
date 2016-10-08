@@ -1,0 +1,371 @@
+.container{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  @include flexbox();
+  @include flex-direction(column);
+  >*{
+    width: 100%;
+  }
+  @extend %header;
+  >.section-con {
+    @include flex(1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    .swiper-container {
+      @include flexbox();
+      height: 175px;
+      width: 100%;
+      .swiper-slide {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-pagination-bullet {
+        height: 4px;
+        width: 11px;
+        border-radius: 3px;
+        background: rgba(0, 0, 0, 0.8);
+        margin-right: 5px;
+        display: inline-block;
+        text-indent: -9999999px;
+      }
+      .swiper-pagination-bullet-active {
+        background: rgba(255, 255, 255, 1);
+      }
+    }
+    //end of banner
+    .selectul {
+      height: 108px;
+      background: #fff;
+      padding-top: 20px;
+      @include flexbox();
+      li {
+        @include flex(1);
+        @include flexbox();
+        @include justify-content(center);
+        a {
+          text-align: center;
+          display: block;
+          width: 56px;
+          height: 100%;
+          color: #4c4c4c;
+          line-height: 36px;
+          img {
+            margin-left: 5px;
+            @include flex(1);
+            width: 48px;
+            height: 48px;
+            display: block;
+          }
+        }
+      }
+    }
+    //end of selectul
+    .itemlist{
+      > * {
+        margin-top: 10px;
+        background: #fff url(/build/images/sale.jpg) no-repeat;
+      }
+      // itemlist---onlyphone
+      .onlyphone {
+        padding: 0px 0 10px 0;
+        .top_tit {
+          color: #666;
+          font-size: 18px;
+          font-weight: normal;
+          border-bottom: 1px solid #d9d9d9;
+          height: 35px;
+          line-height: 35px;
+          text-indent: 10px;
+        }
+        .swiper-container2 {
+          width: 100%;
+          margin: 20px 0 20px 8px;
+          height: 120px;
+          .swiper-slide {
+            width: 65%;
+            margin-right: 5px;
+            border: 1px solid #e6e6e6;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              color: #666;
+              position: relative;
+              @include flexbox();
+              img {
+                width: 50%;
+                height: 95%;
+              }
+              p {
+                overflow: hidden;
+                text-align: left;
+                position: absolute;
+                left: 50%;
+                top: 14%;
+                width: 46%;
+                .b_tit{
+                  display: block;
+                  height: 37px;
+                  padding: 0 2px;
+                  font-size: 12px;
+                  overflow: hidden;
+                  color: #666666;
+                }
+                .b_discount {
+                  background-color: #ff9f82;
+                  color: #fff;
+                  border-radius: 5px;
+                  letter-spacing: 1px;
+                  font-size: 12px;
+                  text-align: center;
+                  margin-top: 5px;
+                  padding: 1px 2px;
+                  display: block;
+                  width: 32%;
+                }
+
+                .b_price {
+                  color: #e70;
+                  display: block;
+                  font-size: 12px;
+                  overflow: hidden;
+                  height: 30px;
+                  margin-top: -15%;
+                  margin-left: 32%;
+                  box-sizing: border-box;
+                  strong{
+                    font-weight: 600;
+                    .minPrice{
+                      font-size: 24px;
+                      padding: 0 1px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //end of itemlist----onlyphone
+      //itemlist---np_wrap
+      .np_wrap{
+        height:285px;
+        position:relative;
+        .title{
+          h3{
+            color: #666;
+            font-size: 18px;
+            font-weight: normal;
+            border-bottom: 1px solid #d9d9d9;
+            height: 35px;
+            line-height: 35px;
+            text-indent: 10px;
+          }
+        }
+        .prodlist{
+          height:250px;
+          @include flexbox();
+          @include flex-wrap(wrap);
+          position: relative;
+          a{
+            display: block;
+            img{
+              width: 100%;
+              height:100%;
+            }
+          }
+          .big-l{
+            width: 46.66%;
+            height:100%;
+          }
+          .big-r{
+            width: 53.34%;
+            height:44%;
+          }
+          .small{
+            width: 53.34%;
+            height:56%;
+            @include flexbox();
+            position: absolute;
+            bottom:0;
+            right:0;
+            a{
+              border-right:1px solid #f2f2f2;
+              border-top:1px solid #f2f2f2;
+              @include flex(1);
+            }
+          }
+        }
+      }
+      //end of itemlist----np_wrap
+
+    }
+    //end of itemlist
+    .moretui{
+      >h3{
+        position: relative;
+        line-height: 44px;
+        padding-left: 10px;
+        font-size: 18px;
+        height: 44px;
+        font-weight: 700;
+        width: 70%;
+        margin:0 auto;
+        .line{
+          display: block;
+          border-bottom: 1px solid #929292;
+          padding-top: 25px;
+        }
+        .tui{
+          display: block;
+          position: absolute;
+          top: 0px;
+          width: 140px;
+          left: 25%;
+          background:#ebebeb;
+          color: #929292;
+          text-align: center;
+        }
+      }
+      .enjoy{
+        width: 100%;
+        padding-left:8px;
+        ul{
+          height:auto;
+          width:100%;
+          @include flexbox();
+          flex-wrap: wrap;
+          li{
+            margin:8px 2% 0 0;
+            background: #fff;
+            width:48%;
+            height:268px;
+            .goodsName{
+              color: #383838;
+              line-height: 1.2em;
+              height: 36px;
+              overflow: hidden;
+              padding: 0px 5px;
+              margin-bottom: 5px;
+              font-size: 15px;
+            }
+            .price{
+              padding: 0px 5px;
+              line-height: 1.2em;
+              color: #ff9f82;
+              font-size: 16px;
+              padding-bottom: 10px;
+              del{
+                color: #a8a8a8;
+                font-size: 14px;
+                text-decoration: line-through;
+              }
+              .zhe{
+                padding: 2px 7px;
+                background: #ff9f82;
+                float: right;
+                color: #fff;
+                font-size: 14px;
+                margin-top: -10px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    //end of moretui
+    #search_container{
+      display: none;
+      padding-top: 50px;
+      width: 100%;
+      max-width: 640px;
+      padding:0 15px;
+      height: 100%;
+      background: #f2f2f2;
+      z-index: 99999;
+      position: fixed;
+      top:0;
+      left:0;
+      .close{
+        background: url(http://i0.ule.com/ulewap/i/closex2x.png);
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 15px;
+        margin-left: -10px;
+      }
+      .search_box {
+        position: absolute;
+        width:100%;
+        max-width: 640px;
+        padding-right: 80px;
+        left:10%;
+        height: 40px;
+        top:56px;
+        #searchForm{
+          @include flexbox();
+          input{
+            line-height: 20px;
+            padding-right: 25px;
+            background: #fff;
+            height: 40px;
+            border-radius: 20px 0 0 20px;
+            width: 100%;
+            max-width: 640px;
+            padding-left: 10px;
+          }
+          #search_btn{
+            color: #fff;
+            background: #e42222;
+            width: 80px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 0 20px 20px 0;
+          }
+        }
+
+      }
+      .search_wrap{
+        position: absolute;
+        width:100%;
+        max-width: 640px;
+        left:8%;
+        top:120px;
+        h3{
+          font-size: 15px;
+          margin-bottom: 10px;
+          color: #8c8c8c;
+          font-weight: normal;
+        }
+        ul{
+          @include flexbox();
+          @include flex-wrap(wrap);
+          width:100%;
+          li{
+            text-align: center;
+            width: 28%;
+            margin-right: 2%;
+            background: #fff;
+            overflow: hidden;
+            padding: 5px;
+            margin-bottom: 8px;
+            min-height: 36px;
+            border-radius: 20px;
+            a{
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+    //end if search_container
+  }
+}

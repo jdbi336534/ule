@@ -16,7 +16,7 @@ var uglify = require('gulp-uglify');
 // 引入 fs url 模块
 var fs = require('fs');
 var url = require('url');
- 
+
 // 引入 rev revCollector 模块
 var rev = require('gulp-rev');
 var revCollector = require('gulp-rev-collector');
