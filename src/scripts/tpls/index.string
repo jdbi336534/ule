@@ -15,9 +15,9 @@
       <div class="swiper-pagination"></div>
     </div>
     <ul class="selectul">
-      <li><a href="#"><img src="/build/images/wap_foot_02.png"/>邮乐农品</a></li>
-      <li><a href="#"><img src="/build/images/category_icon02.png"/>商品分类</a></li>
-      <li><a href="#"><img src="/build/images/ticket_home.png"/>领券</a></li>
+      <li><a href="npule.html"><img src="/build/images/wap_foot_02.png"/>邮乐农品</a></li>
+      <li><a href="category.html"><img src="/build/images/category_icon02.png"/>商品分类</a></li>
+      <li><a href="lq.html"><img src="/build/images/ticket_home.png"/>领券</a></li>
       <li><a href="#"><img src="/build/images/wap_foot_05.png"/>邮乐特卖</a></li>
     </ul>
     <div class="itemlist">
@@ -26,7 +26,7 @@
         <div class="swiper-container2">
           <ul class="swiper-wrapper" id="onlyPhoneUl">
             <li class="swiper-slide">
-              <a href="#">
+              <a href="">
                 <img src="http://pic1.ule.com/item/user_0102/desc20160930/5361dc574db28aa2_-1x-1.jpg">
                 <p>
                   <span class="b_tit">【今日最值】天然洋槐蜂蜜2瓶！</span>
@@ -66,20 +66,20 @@
       </div>
       <div class="active">
         <ul class="hot_active">
-          <li><a href="#"><img src="http://pic1.ule.com/item/user_0102/desc20160930/145a9dea4c49b93c_-1x-1.jpg"></a></li>
-          <li><a href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160928/5626b45c4ada362f_-1x-1.jpg"></a></li>
-          <li><a href="#"><img src="http://pic3.ule.com/item/user_0102/desc20160928/8045a311e6467dbb_-1x-1.jpg"></a></li>
+          <li><a href="/build/detail.html?listId=1788038"><img src="http://pic0.ule.com/item/user_0102/desc20161008/3883f2f4dce91d62_-1x-1.jpg"></a></li>
+          <li><a href="/build/detail.html?listId=1813677"><img src="http://pic1.ule.com/item/user_0102/desc20161008/1c82d619636c03c7_-1x-1.jpg"></a></li>
+          <li><a href="/build/detail.html?listId=1757477"><img src="http://pic4.ule.com/item/user_0102/desc20161008/7094bae8adf65d48_-1x-1.jpg"></a></li>
         </ul>
         <div class="brandStreet">
           <p><img src="http://i0.ule.com/ulewap/i/street.jpg"></p>
           <div class="swiper-container3">
             <ul class="swiper-wrapper">
-              <li class="swiper-slide"><a href="#"><img src="http://pic0.ule.com/item/user_0102/desc20160928/48bbcd6cc59ec319_-1x-1.jpg"></a></li>
-              <li class="swiper-slide"> <a href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160928/e7bc14d23bfe4265_-1x-1.jpg"></a></li>
-              <li class="swiper-slide"><a href="#"><img src="http://pic1.ule.com/item/user_0102/desc20160928/ecb5cb6db4b7bf60_-1x-1.png"></a></li>
-              <li class="swiper-slide"><a href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160928/f7977c5c21b492ac_-1x-1.jpg"></a></li>
-              <li class="swiper-slide"><a href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160928/f19701853176e8f3_-1x-1.jpg"></a></li>
-              <li class="swiper-slide"><a href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160928/4b5c06a0f3cc2998_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=7687"><img src="http://pic0.ule.com/item/user_0102/desc20161008/b0fee56004a6d8af_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=5910"><img src="http://pic4.ule.com/item/user_0102/desc20161008/cab46f1a48c54c44_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=7101"><img src="http://pic3.ule.com/item/user_0102/desc20161008/8008ed0b4fbef0eb_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=6619"><img src="http://pic4.ule.com/item/user_0102/desc20161008/a6d115634188aa4c_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=10622"><img src="http://pic2.ule.com/item/user_0102/desc20161008/db68d18755226e4f_-1x-1.jpg"></a></li>
+              <li class="swiper-slide"><a href="/build/dp.html?storeId=8176"><img src="http://pic4.ule.com/item/user_0102/desc20161008/89eb6f184ce14f2b_-1x-1.jpg"></a></li>
             </ul>
           </div>
         </div>
@@ -89,16 +89,16 @@
           <h3>特色农品</h3>
         </div>
         <div class="prodlist">
-          <a class="big-l" href="#"><img src="http://pic3.ule.com/item/user_0102/desc20160930/494d52850b3cf899_-1x-1.jpg"></a>
-          <a class="big-r" href="#"><img src="http://pic1.ule.com/item/user_0102/desc20160930/42cf87979d1a618d_-1x-1.jpg"></a>
+          <a class="big-l" href="/build/detail.html?listId=1758278"><img src="http://pic0.ule.com/item/user_0102/desc20161008/9e48a1a4fa2ae321_-1x-1.jpg"></a>
+          <a class="big-r" href="/build/detail.html?listId=1397962"><img src="http://pic4.ule.com/item/user_0102/desc20161008/6082074475bd0cc2_-1x-1.jpg"></a>
           <div class="small">
-            <a class="" href="#"><img src="http://pic3.ule.com/item/user_0102/desc20160930/e71d49878f1991e7_-1x-1.jpg"></a>
-            <a class="" href="#"><img src="http://pic4.ule.com/item/user_0102/desc20160930/a430818404c8a433_-1x-1.jpg"></a>
+            <a class="" href="/build/detail.html?listId=933217"><img src="http://pic0.ule.com/item/user_0102/desc20161008/e29c2f05d0c26d01_-1x-1.jpg"></a>
+            <a class="" href="/build/detail.html?listId=1809888"><img src="http://pic2.ule.com/item/user_0102/desc20161008/36d981e447aca27f_-1x-1.jpg"></a>
           </div>
         </div>
       </div>
       <div class="crazy">
-        <a href="#"><img src="http://pic3.ule.com/item/user_0102/desc20160930/40daaff288bd2d50_-1x-1.jpg"></a>
+        <a href="/build/dp.html?storeId=8994"><img src="http://pic3.ule.com/item/user_0102/desc20160930/40daaff288bd2d50_-1x-1.jpg"></a>
       </div>
       <div class="goodstore">
         <h3>
@@ -110,66 +110,66 @@
             <div class="swiper-slide">
               <div class="product-pic" href="javascript:;">
                 <div class="goodstore_top">
-                  <a href="#">
+                  <a href="/build/dp.html?storeId=6619">
                     <span class="goodstore_loge">
-                      <img src="http://pic2.ule.com/item/user_0102/desc20160928/515e3f4f65af9714_-1x-1.jpg">
+                      <img src="http://pic4.ule.com/item/user_0102/desc20161008/a6d115634188aa4c_-1x-1.jpg">
                     </span>
                     <div class="goodstore_title">
-                      <h3  class="goodstore_title">锋福母婴旗舰店</h3>
-                      <p class="goodstore_subtit">全场满100元立减10元</p>
+                      <h3  class="goodstore_title">LESMART旗舰店</h3>
+                      <p class="goodstore_subtit">早秋潮翻天</p>
                     </div>
                     <span class="goodstore_btn">进入店铺</span>
 
                   </a>
                 </div>
                 <div class="goodstore_imglist">
-                  <a href="#"><img src="http://pic1.ule.com/pic/user_800106792/product/prd20160615/bc5894ab4ea9b2c4_p450x450_l.jpg"></a>
-                  <a href="#"><img src="http://pic4.ule.com/pic/user_800106792/product/prd20160316/1db0f9edde33b89d_p450x450_l.jpg"></a>
-                  <a href="#"><img src="http://pic0.ule.com/pic/user_800106792/product/prd20160506/3cfc4abdbcbb6302_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=648748"><img src="http://pic3.ule.com/pic/user_800106416/product/prd20150929/6f12ee774390b4fd_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1753868"><img src="http://pic1.ule.com/pic/user_800106416/product/prd20160906/5b8d14d31b234250_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1798045"><img src="http://pic0.ule.com/pic/user_800106416/product/prd20160922/a4784a499e9368b1_p800x800_l.jpg"></a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product-pic" href="javascript:;">
                 <div class="goodstore_top">
-                  <a href="#">
+                  <a href="/build/dp.html?storeId=11136"">
                     <span class="goodstore_loge">
-                      <img src="http://pic0.ule.com/item/user_0102/desc20160928/41f61b3407884526_-1x-1.jpg">
+                      <img src="http://pic2.ule.com/item/user_0102/desc20161008/db68d18755226e4f_-1x-1.jpg">
                     </span>
                     <div class="goodstore_title">
-                      <h3  class="goodstore_title">上海行立家居有限公司</h3>
-                      <p class="goodstore_subtit">品质家居生活 全场3折起</p>
+                      <h3  class="goodstore_title">卡帝乐鳄鱼旗舰店</h3>
+                      <p class="goodstore_subtit">潮流由我定义</p>
                     </div>
                     <span class="goodstore_btn">进入店铺</span>
 
                   </a>
                 </div>
                 <div class="goodstore_imglist">
-                  <a href="#"><img src="http://pic1.ule.com/pic/user_800108691/product/prd20160926/00e041214dbf9dac_p800x800_l.jpg"></a>
-                  <a href="#"><img src="http://pic1.ule.com/pic/user_800108691/product/prd20160713/e14659b39d670731_p800x800_l.jpg"></a>
-                  <a href="#"><img src="http://pic3.ule.com/pic/user_800108691/product/prd20160415/42aaed8cb3033cd9_p800x1000_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1555808"><img src="http://pic1.ule.com/pic/user_800112017/product/prd20160621/5cb324948b87e593_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1439390"><img src="http://pic1.ule.com/pic/user_800112017/product/prd20160414/44e23ba9ac9c4e8b_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1440444"><img src="http://pic4.ule.com/pic/user_800112017/product/prd20160415/6e4fd6ac13df0ed2_p800x800_l.jpg"></a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="product-pic" href="javascript:;">
                 <div class="goodstore_top">
-                  <a href="#">
+                  <a href="/build/dp.html?storeId=6577">
                     <span class="goodstore_loge">
-                      <img src="/build/images/goodStore3.jpg">
+                      <img src="http://pic4.ule.com/item/user_0102/desc20161008/89eb6f184ce14f2b_-1x-1.jpg">
                     </span>
                     <div class="goodstore_title">
-                      <h3  class="goodstore_title">品牌手机专营店</h3>
-                      <p class="goodstore_subtit">原装正品，不忘初心</p>
+                      <h3  class="goodstore_title">优居生活馆</h3>
+                      <p class="goodstore_subtit">满299赠送立白洗衣皂一块</p>
                     </div>
                     <span class="goodstore_btn">进入店铺</span>
 
                   </a>
                 </div>
                 <div class="goodstore_imglist">
-                  <a href="#"><img src="http://pic0.ule.com/pic/user_800109014/product/prd20160916/7b5c3a904c66aaee_p450x450_l.jpg"></a>
-                  <a href="#"><img src="http://pic0.ule.com/pic/user_100055/product/prd20160920/8b54c184ea5af48e_p459x457_l.jpg"></a>
-                  <a href="#"><img src="http://pic3.ule.com/pic/user_100055/product/prd20160511/40c887102a66aacb_p557x546_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1101475"><img src="http://pic2.ule.com/pic/user_800105992/product/prd20151207/841faa45efec5e47_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1092607"><img src="http://pic0.ule.com/pic/user_800105992/product/prd20150331/2c43b04123a39b48_p800x800_l.jpg"></a>
+                  <a href="/build/detail.html?listId=1265711"><img src="http://pic2.ule.com/pic/user_800105992/product/prd20150929/18b7454384c150bc_p800x800_l.jpg"></a>
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@
     </div>
     <div class="fixed_btn">
       <a class="go_back" href="#top"  target="_self"></a>
-      <a class="shopping_cart" href="#"><i>1</i></a>
+      <a class="shopping_cart" href="car.html"><i>1</i></a>
     </div>
     <div id="search_container" >
       <a href="javascript:" class="close"></a>
@@ -228,10 +228,3 @@
     </div>
   </section>
 </div>
-<!-- <script id="list" type="text/html">
-  <ul>
-    {{each data as value i}}
-    <li><span><i><img src={{value.img}} alt=""></i><b>{{value.title}}</b></span></li>
-    {{/each}}
-  </ul>
-</script> -->

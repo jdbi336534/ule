@@ -707,9 +707,13 @@ body {
     margin: 0 4px;
     height: 40px;
     line-height: 40px;
-    color: #fff;
     width: 40px;
     font-weight: bold; }
+    .container header .clogin a {
+      display: block;
+      color: #fff;
+      width: 100%;
+      height: 100%; }
 
 .container .npheader {
   background: #e70;

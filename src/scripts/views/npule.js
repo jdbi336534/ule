@@ -23,7 +23,7 @@ window.npSale = function (result) {
   console.log(result.result[0]);
   $('#onlyPhoneUl').html("");
   for(var i=result.result.length-1;i>=0;i--){
-    var html = '    <li class="swiper-slide"><a href="#" target="_blank"><img src="'+result.result[i].imgUrl+' alt="/build/images/a71c6c945acafee9_p800x800_l.jpg""/><p><span class="b_tit">'+result.result[i].listingName+'</span><span class="b_discount">'+Math.ceil(parseInt(result.result[i].minPrice)*10/parseInt(result.result[i].maxPrice))+'折</span><span class="b_price"><strong>¥<i class="minPrice">'+Math.floor(parseFloat(result.result[i].minPrice))+'</i>.'+Math.floor(parseFloat(result.result[i].minPrice)*100%100)+'</strong></span></p></a></li>'
+    var html = '    <li class="swiper-slide"><a href="/build/detail.html?listId='+result.result[i].itemId+'" target="_blank"><img src="'+result.result[i].imgUrl+' alt="/build/images/a71c6c945acafee9_p800x800_l.jpg""/><p><span class="b_tit">'+result.result[i].listingName+'</span><span class="b_discount">'+Math.ceil(parseInt(result.result[i].minPrice)*10/parseInt(result.result[i].maxPrice))+'折</span><span class="b_price"><strong>¥<i class="minPrice">'+Math.floor(parseFloat(result.result[i].minPrice))+'</i>.'+Math.floor(parseFloat(result.result[i].minPrice)*100%100)+'</strong></span></p></a></li>'
     npcommon.append($('#onlyPhoneUl'), html);
   }
   swiper2.update();
@@ -35,7 +35,7 @@ document.body.appendChild(tuijianSrc);
 window.tuijian = function (result) {
   $('.enjoy ul').html("");
   for(var i=0;i<result.result.length;i++){
-    var html = '<li><a href="#"><img width="176" height="176" src="'+result.result[i].imgUrl+' alt="/build/images/a71c6c945acafee9_p800x800_l.jpg""/> <p class="goodsName">'+result.result[i].listingName+'</p><p class="price"><del>¥'+result.result[i].maxPrice+'</del><br>¥'+result.result[i].minPrice+'<span class="zhe">'+(parseInt(result.result[i].minPrice)*10/parseInt(result.result[i].maxPrice)).toFixed(1)+'折</span></p></a></li>';
+    var html = '<li><a href="/build/detail.html?listId='+result.result[i].itemId+'"><img width="176" height="176" src="'+result.result[i].imgUrl+' alt="/build/images/a71c6c945acafee9_p800x800_l.jpg""/> <p class="goodsName">'+result.result[i].listingName+'</p><p class="price"><del>¥'+result.result[i].maxPrice+'</del><br>¥'+result.result[i].minPrice+'<span class="zhe">'+(parseInt(result.result[i].minPrice)*10/parseInt(result.result[i].maxPrice)).toFixed(1)+'折</span></p></a></li>';
     npcommon.append($('.enjoy ul'), html);
   }
 }

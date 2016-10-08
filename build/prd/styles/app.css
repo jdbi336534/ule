@@ -707,9 +707,13 @@ body {
     margin: 0 4px;
     height: 40px;
     line-height: 40px;
-    color: #fff;
     width: 40px;
     font-weight: bold; }
+    .container header .clogin a {
+      display: block;
+      color: #fff;
+      width: 100%;
+      height: 100%; }
 
 .container .npheader {
   background: #e70;
@@ -1063,7 +1067,8 @@ body {
           height: 100%;
           border: 1px solid #e6e6e6;
           border-radius: 8px;
-          margin: 0 1.5%; }
+          margin: 0 1.5%;
+          overflow: hidden; }
           .container > .section-con .itemlist .goodstore .swiper-container4 .swiper-slide div.product-pic {
             padding: 10px 10px 5px;
             width: 100%;
