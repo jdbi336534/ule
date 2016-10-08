@@ -1,12 +1,81 @@
 <div class="container">
 	<header>
 		<ul>
-			<li>1</li>
+			<li> <a href="#"><i class="iconfont">&#xe679;</i></a></li>
 			<li>苹果</li>
-			<li>2</li>
+			<li class="filter"></li>
 		</ul>
 	</header>
 	<section>
+	<div class="fixed"></div>
+	<div class="fixLeft">
+   
+   <ul class="filterUl">
+   <li><span class="focus">属性</span></li>
+   <li><span class="">所在地</span></li>
+   </ul>
+
+
+
+   <div class="attrContent" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+   <ul class="attrUl"><li><p class="title">品牌<i></i></p><ol><li brandid="11256"><span>洛川苹果</span><i></i></li><li brandid="19134"><span>郜台</span><i></i></li><li brandid="39375"><span>好彭邮</span><i></i></li><li brandid="30055"><span>农家自产</span><i></i></li><li brandid="29013"><span>帝安</span><i></i></li><li brandid="27304"><span>关李</span><i></i></li><li brandid="32784"><span>绿源凯歌/LYKG</span><i></i></li><li brandid="20286"><span>WUXINGGUOPIN</span><i></i></li><li brandid="28572"><span>黄灵</span><i></i></li><li brandid="25324"><span>西山龙</span><i></i></li><li brandid="39551"><span>杞农优食</span><i></i></li><li brandid="37800"><span>富岗</span><i></i></li><li brandid="34391"><span>广志</span><i></i></li><li brandid="34350"><span>秦盛</span><i></i></li><li brandid="41468"><span>包龙图</span><i></i></li><li brandid="25249"><span>方德蜂园</span><i></i></li><li brandid="9939"><span>泰优汇</span><i></i></li><li brandid="26934"><span>草鲜禾堂</span><i></i></li><li brandid="32756"><span>美域高</span><i></i></li><li brandid="31164"><span>银铃</span><i></i></li><li brandid="26227"><span>绿水峡谷</span><i></i></li><li brandid="40242"><span>旺园</span><i></i></li><li brandid="20256"><span>阿丽米罕</span><i></i></li><li brandid="23617"><span>梨花香</span><i></i></li><li brandid="27392"><span>锦曙光</span><i></i></li></ol></li><li><p class="title">优惠<i></i></p><ol><li promotionid="13">区域限购<i></i></li></ol></li><li><p class="checked">支持邮乐卡支付<i class="focus"></i></p></li><li><p class="checked">商家包邮<i></i></p></li><li><p class="">价格区间</p><div class="price"><input type="text" placeholder="0" name="minPrice">—<input type="text" placeholder="∞" name="maxPrice"></div></li></ul>
+   </div>
+   
+   
+   <div class="placeContent" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+       <p class="allPlace">所有地区<i class="focus"></i></p>
+       <ol><li provinceid="21">内蒙古<i></i></li><li provinceid="19">辽宁<i></i></li><li provinceid="18">吉林<i></i></li><li provinceid="11">黑龙江<i></i></li><li provinceid="25">上海<i></i></li><li provinceid="2">北京<i></i></li><li provinceid="30">天津<i></i></li><li provinceid="10">河北<i></i></li><li provinceid="26">山西<i></i></li><li provinceid="4">福建<i></i></li><li provinceid="17">江西<i></i></li><li provinceid="24">山东<i></i></li><li provinceid="12">河南<i></i></li><li provinceid="14">湖北<i></i></li><li provinceid="16">江苏<i></i></li><li provinceid="34">浙江<i></i></li><li provinceid="1">安徽<i></i></li><li provinceid="7">广西<i></i></li><li provinceid="9">海南<i></i></li><li provinceid="29">台湾<i></i></li><li provinceid="3">重庆<i></i></li><li provinceid="28">四川<i></i></li><li provinceid="8">贵州<i></i></li><li provinceid="15">湖南<i></i></li><li provinceid="6">广东<i></i></li><li provinceid="5">甘肃<i></i></li><li provinceid="23">青海<i></i></li><li provinceid="22">宁夏<i></i></li><li provinceid="31">新疆<i></i></li><li provinceid="13">香港<i></i></li><li provinceid="20">澳门<i></i></li><li provinceid="35">海外<i></i></li><li provinceid="33">云南<i></i></li><li provinceid="32">西藏<i></i></li><li provinceid="27">陕西<i></i></li></ol>
+   </div>
+   
+   <div class="bottmBtn">
+     <a href="javascript:void(0);">确定</a>
+   </div>   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<section id="index-scroll">
 			<div>
@@ -51,7 +120,8 @@
 			</div>
 
 			<!-- </script>-->
-		</section>
+	</section>
+	
 
 	</section>
 
